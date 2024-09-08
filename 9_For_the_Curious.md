@@ -1,7 +1,5 @@
 [toc]
 
-# For the Curious
-
 # Create HOOMD-blue initial configurations
 
 You don’t need to perform the following operations yourself. Please use the existing initial configuration files available on the shared storage that we have prepared for you.

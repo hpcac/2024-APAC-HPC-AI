@@ -149,3 +149,13 @@ llama.sh'
 ```bash
 tail -f ${HOME}/run/output/llama.nodes2.GBS64.MBS8.{PBS_JOBNAME.PBS_JOBID}.gadi-pbs/1/rank.*/std*
 ```
+
+# Read the results
+
+The performance results of LitGPT Llama2 training are measured in “Training time”. The lower the value, the better.
+
+```
+grep "Training time: 418.99s" ${HOME}/run/llama.* -r
+#llama.nodes2.GBS128.MBS32.o124452549:Training time: 422.16s
+```
+
