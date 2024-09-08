@@ -2,6 +2,35 @@
 
 # For the Curious
 
+# Create HOOMD-blue initial configurations
+
+You don’t need to perform the following operations yourself. Please use the existing initial configuration files available on the shared storage that we have prepared for you.
+
+## Run from command line
+
+The following commands:
+
+1. Create a initial condition files with 500 particles at directory `initial_configuration_cache` under HOOMD-blue work directory
+2. Run no simulation
+3. The command line is even workable on the login nodes
+
+```bash
+cd ${HOME}/scratch/workdir/hoomd
+
+module purge
+module load openmpi/4.1.5
+
+time mpirun \
+-wdir ${HOME}/scratch/workdir/hoomd \
+-map-by ppr:2:node \
+-x PYTHONPATH=${HOME}/scratch/workdir/hoomd/build/hoomd-openmpi4.1.5:${HOME}/scratch/workdir/hoomd/hoomd-benchmarks \
+${HOME}/scratch/workdir/hoomd/hoomd.py312/bin/python \
+-m hoomd_benchmarks.md_pair_wca \
+--device CPU -v \
+-N 500 \
+--warmup_steps 0 --benchmark_steps 0
+```
+
 # Create LitGPT Dataset and Model Files
 
 You don’t need to perform the following operations yourself. Please use the existing dataset and model files available on the shared storage that we have prepared for you.
@@ -118,7 +147,71 @@ mv ${HOME}/scratch/workdir/llama/model/huggingface/meta-llama/Llama-2-7b-hf/{lit
 ln -s ${HOME}/scratch/workdir/llama/model/huggingface/meta-llama/Llama-2-7b-hf/{tokenizer.json,tokenizer_config.json} ${HOME}/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf
 ```
 
-### A GPU Llama2-7B fine-tuning trial with the subset of Alpaca
+# Some LitGPT Trials
+
+## Get started with a CPU trial
+
+The following commands
+
+1. Create a workspace directory for trial runs
+2. Execute a dummy run to download the smallest model and dataset
+
+```bash
+mkdir -p ${HOME}/scratch/workdir/llama/trial
+cd ${HOME}/scratch/workdir/llama/trial
+
+time OMP_NUM_THREADS=1 \
+CUDA_VISIBLE_DEVICES="" \
+${HOME}/scratch/workdir/llama/litgpt.py312/bin/litgpt \
+finetune \
+EleutherAI/pythia-70m \
+--data Alpaca2k \
+--train.max_steps=1 \
+--eval.final_validation=false \
+--data.val_split_fraction=0.00001
+# real	1m29.023s
+```
+
+## Validate distributed training with a small MPI trial
+
+Create a bash script named `nodes2.litgpt.openmpi4.sh` with the following contents
+
+1. Defined PBS command directives to submit the job to the GPU queue 
+2. Load Environment modules to configure the running shell, after purging all loaded modules
+3. Print environment variables of the shell for this script, and the node list for this job
+4. Launch a distributed training with OpenMPI
+   - Define a runtime work directory for the job, allowing the use of relative path such as `EleutherAI/pythia-70m`
+   - Request 4 ranks(GPU processes) per node from the 2 allocated nodes
+   - Enable NCCL verbose output
+   - Run a `pythia-70m` fine-tuning task and exit immediately after 1 step
+
+```bash
+#!/bin/bash
+#PBS -j oe
+#PBS -l walltime=00:00:60
+#PBS -q gpuvolta
+#PBS -m abe
+#PBS -M 393958790@qq.com
+#PBS -P xs75
+
+module purge
+module load pbs openmpi/4.1.5
+
+env
+cat $PBS_NODEFILE
+
+mpirun \
+-wdir ${HOME}/scratch/workdir/llama/trial \
+-map-by ppr:4:node \
+-x NCCL_DEBUG=INFO \
+${HOME}/scratch/workdir/llama/litgpt.py312/bin/litgpt \
+finetune-full \
+EleutherAI/pythia-70m \
+--train.max_steps=1 \
+--devices=4 --num_nodes=2
+```
+
+## A GPU Llama2-7B fine-tuning trial with the subset of Alpaca
 
 ```bash
 #!/bin/bash
@@ -148,36 +241,5 @@ ${HOME}/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf \
 --train.epochs=1 \
 --train.max_steps=1 \
 --devices=4 --num_nodes=2
-```
-
-
-
-# Create HOOMD-blue initial configurations
-
-You don’t need to perform the following operations yourself. Please use the existing initial configuration files available on the shared storage that we have prepared for you.
-
-## Run from command line
-
-The following commands:
-
-1. Create a initial condition files with 500 particles at directory `initial_configuration_cache` under HOOMD-blue work directory
-2. Run no simulation
-3. The command line is even workable on the login nodes
-
-```bash
-cd ${HOME}/scratch/workdir/hoomd
-
-module purge
-module load openmpi/4.1.5
-
-time mpirun \
--wdir ${HOME}/scratch/workdir/hoomd \
--map-by ppr:2:node \
--x PYTHONPATH=${HOME}/scratch/workdir/hoomd/build/hoomd-openmpi4.1.5:${HOME}/scratch/workdir/hoomd/hoomd-benchmarks \
-${HOME}/scratch/workdir/hoomd/hoomd.py312/bin/python \
--m hoomd_benchmarks.md_pair_wca \
---device CPU -v \
--N 500 \
---warmup_steps 0 --benchmark_steps 0
 ```
 
