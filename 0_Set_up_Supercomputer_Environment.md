@@ -35,6 +35,23 @@ ${HOME}/miniconda/bin/conda init
 bash
 ```
 
+## Configure SSH authentication
+
+On the login node, run the following command
+
+```bash
+ssh -o PasswordAuthentication=no -o StrictHostKeyChecking=no localhost
+```
+
+If it works successfully, SSH authentication is configured.
+
+Otherwise, run the following two ssh-keygen commands to configure SSH keys, then run the above "ssh localhost" to confirm SSH authentication has been configured successfully.
+
+```bash
+ssh-keygen -t ecdsa -f ${HOME}/.ssh/id_ecdsa -N "" -vvv
+ssh-keygen -y -f ${HOME}/.ssh/id_ecdsa >> ${HOME}/.ssh/authorized_keys
+```
+
 # NSCC Singapore
 
 {to be updated}
