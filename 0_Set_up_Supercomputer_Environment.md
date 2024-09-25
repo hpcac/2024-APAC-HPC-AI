@@ -54,4 +54,36 @@ ssh-keygen -y -f ${HOME}/.ssh/id_ecdsa >> ${HOME}/.ssh/authorized_keys
 
 # NSCC Singapore
 
-{to be updated}
+## Workspace and cache directory preparation
+
+To created some directories and links, making it easier to access project and application files, the following commands
+
+1. Verify `scratch` directory existence
+2. Create symbolic link to `scratch` directory of MY project `{apacsc22}` if it doesn't exist
+3. No need to Move PIP and HuggingFace cache files
+4. No need to create symbolic link for `cache` directory  
+
+```bash
+file ${HOME}/scratch
+#/home/users/industry/ai-hpc/apacsc22/scratch: symbolic link to /scratch/users/industry/ai-hpc/apacsc22
+ln -s /scratch/users/industry/ai-hpc/apacsc22 ${HOME}/scratch
+#mv ${HOME}/.cache ${HOME}/scratch/home_cache
+#ln -s scratch/home_cache .cache
+```
+
+## Setup Python environments
+
+To Install a MiniConda to create Python environments, the following commands
+
+1. Download latest `miniconda.sh` to scratch directory
+2. Install miniconda to `${HOME}/miniconda`
+3. Initialized `.bashrc` for the installed miniconda
+4. Start a new bash shell with `conda` enabled
+
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ${HOME}/scratch/miniconda.sh
+time bash ${HOME}/scratch/miniconda.sh -b -p ${HOME}/miniconda
+# real	1m20.568s
+${HOME}/miniconda/bin/conda init
+bash
+```

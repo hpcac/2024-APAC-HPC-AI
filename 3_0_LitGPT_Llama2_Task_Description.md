@@ -15,7 +15,7 @@ Participants are required to optimize the following workload for improved perfor
 
 | Supercomputer | NCI Gadi iterations     | NSCC SG Aspire-2A iterations |
 | ------------- | ----------------------- | ---------------------------- |
-| **Dataset**   | `Alpaca1024/train.json` | {to be updated}              |
+| **Dataset**   | `Alpaca1024/train.json` | `Alpaca1024/train.json`      |
 
 ## 2. Submission and Presentation
 

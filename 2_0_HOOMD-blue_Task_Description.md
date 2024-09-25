@@ -15,12 +15,12 @@ Participants are required to optimize the following workload for improved perfor
 
 | Number of nodes | NCI Gadi iterations<br />(Warm up/Benchmark) | NSCC SG Aspire-2A iterations<br />(Warm up/Benchmark) |
 | --------------- | -------------------------------------------- | ----------------------------------------------------- |
-| 32              | 10,000/320,000                               | {to be updated}                                       |
-| 16              | 10,000/160,000                               | {to be updated}                                       |
-| 8               | 40,000/80,000                                | {to be updated}                                       |
-| 4               | 40,000/80,000                                | {to be updated}                                       |
-| 2               | 40,000/80,000                                | {to be updated}                                       |
-| 1               | 40,000/80,000                                | {to be updated}                                       |
+| 32              | 10,000/320,000                               | 1/1 {Failed to run}                                   |
+| 16              | 10,000/160,000                               | 1/1 {Failed to run}                                   |
+| 8               | 40,000/80,000                                | 40,000/80,000                                         |
+| 4               | 40,000/80,000                                | 40,000/80,000                                         |
+| 2               | 40,000/80,000                                | 40,000/80,000                                         |
+| 1               | 40,000/80,000                                | 40,000/80,000                                         |
 
 ## 2. Submission and Presentation
 

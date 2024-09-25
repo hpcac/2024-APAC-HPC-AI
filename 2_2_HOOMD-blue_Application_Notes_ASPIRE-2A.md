@@ -9,16 +9,16 @@ The following commands
 1. Created a workspace directory for HOOMD-blue under `scratch` directory
 2. Clone latest `HOOMD-blue` and `hoomd-benchmarks` code to the work directory
 4. Create the `initial_configuration_cache` directory to hold the initial condition files
-4. Copy the initial configuration file prepared at `/scracth/public` to the `initial_configuration_cache` directory
+4. Copy the initial configuration file prepared at `/scratch/users/industry/ai-hpc/apacsc22/public` to the `initial_configuration_cache` directory
 
 ```bash
 mkdir ${HOME}/scratch/workdir/hoomd -p
 time git -C ${HOME}/scratch/workdir/hoomd clone https://github.com/glotzerlab/hoomd-blue  --recursive
-# real	0m39.175s
+# real	0m39.619s
 time git -C ${HOME}/scratch/workdir/hoomd clone https://github.com/glotzerlab/hoomd-benchmarks
-# real	0m7.302s
+# real	0m9.741s
 mkdir -p ${HOME}/scratch/workdir/hoomd/initial_configuration_cache
-cp /scratch/public/2024-apac-hpc-ai/hoomd/initial_configuration_cache/hard_sphere_200000_1.0_3.gsd \
+cp /scratch/users/industry/ai-hpc/apacsc22/public/2024-apac-hpc-ai/hoomd/initial_configuration_cache/hard_sphere_200000_1.0_3.gsd \
 ${HOME}/scratch/workdir/hoomd/initial_configuration_cache
 ```
 
@@ -32,20 +32,20 @@ The following commands
 4. Install `GSD` and `numpy`
 
 ```bash
-time conda create -p ${HOME}/scratch/workdir/hoomd/hoomd.py312 python=3.12 -y
-# real	2m1.718s
+time ${HOME}/miniconda/bin/conda create -p ${HOME}/scratch/workdir/hoomd/hoomd.py312 python=3.12 -y
+# real	1m12.480s
 time ${HOME}/scratch/workdir/hoomd/hoomd.py312/bin/pip install pybind11
 # real	0m2.986s
 time ${HOME}/scratch/workdir/hoomd/hoomd.py312/bin/python3 ${HOME}/scratch/workdir/hoomd/hoomd-blue/install-prereq-headers.py -y
-# real	2m10.649s
+# real	0m25.010s
 time ${HOME}/scratch/workdir/hoomd/hoomd.py312/bin/pip install numpy gsd
-# real	0m13.976s
+# real	0m10.627s
 
 # An alternative approch to fix the pybind11 issue is to correct the wrong version number in prereq script
 # sed -i 's|pybind11/archive/v2.10.1.tar.gz|pybind11/archive/v2.13.5.tar.gz|g' hoomd-blue/install-prereq-headers.py
 ```
 
-## Build HOOMD-blue with OpenMPI
+## Build HOOMD-blue with ASPIRE-2A OpenMPI
 
 The following commands
 
@@ -56,49 +56,92 @@ The following commands
 5. Validate the built Python package
 
 ```bash
-module avail | grep -i mpi
-module load openmpi/4.1.5
-module load gcc/14.1.0
+module list | grep -i mpi
+module purge
+module avail 2>&1 | grep mpi
+module load openmpi/4.1.2-hpe
+module load libfabric/1.11.0.4.125
+
+rm -fr ${HOME}/scratch/workdir/hoomd/build/hoomd-openmpi-4.1.2-hpe
 
 time PATH=${HOME}/scratch/workdir/hoomd/hoomd.py312/bin:$PATH \
 cmake \
--B ${HOME}/scratch/workdir/hoomd/build/hoomd-openmpi4.1.5 \
+-B ${HOME}/scratch/workdir/hoomd/build/hoomd-openmpi-4.1.2-hpe \
 -S ${HOME}/scratch/workdir/hoomd/hoomd-blue \
 -D ENABLE_MPI=on \
--D MPI_HOME=$OPENMPI_ROOT \
+-D MPI_HOME=$OPENMPI_DIR \
 -D cereal_DIR=${HOME}/scratch/workdir/hoomd/hoomd.py312/lib64/cmake/cereal \
 -D Eigen3_DIR=${HOME}/scratch/workdir/hoomd/hoomd.py312/share/eigen3/cmake \
 -D pybind11_DIR=${HOME}/scratch/workdir/hoomd/hoomd.py312/lib/python3.12/site-packages/pybind11/share/cmake/pybind11
-# real	0m17.844s
+# real 0m19.902s
+```
 
-time cmake --build ${HOME}/scratch/workdir/hoomd/build/hoomd-openmpi4.1.5 -j 16
-# real	28m38.769s
+Option 1: Allocate a compute node to build the application
 
+```bash
+echo "hostname && lscpu && free -g" | qsub -l select=1 -l walltime=00:00:01 -P 50000022
+
+echo "module purge && module load openmpi/4.1.2-hpe && \
+time cmake --build ${HOME}/scratch/workdir/hoomd/build/hoomd-openmpi-4.1.2-hpe \
+-j $((128*1)) 2>&1 | tee ${HOME}/buildhoomd-openmpi-4.1.2-hpe.log " | qsub \
+-l select=1:ncpus=$((128*1)):mem=$((128*2))G \
+-l walltime=00:10:01 -P 50000022 -N buildhoomd-openmpi-4.1.2-hpe
+# 3m22.801s
+
+qstat
+qstat -f
+tail -f ${HOME}/buildhoomd-openmpi-4.1.2-hpe.log
+```
+
+Option 2: Build the application from login node, while the CPU allocation has been limited to 4 by Control Group policy
+
+```bash
+time cmake --build ${HOME}/scratch/workdir/hoomd/build/hoomd-openmpi-4.1.2-hpe -j 4
+# real 14m19.211s
+```
+
+Validate the built package
+
+```bash
 # Validate the built package by loading it with Python
-PYTHONPATH=${HOME}/scratch/workdir/hoomd/build/hoomd-openmpi4.1.5 \
+PYTHONPATH=${HOME}/scratch/workdir/hoomd/build/hoomd-openmpi-4.1.2-hpe \
 ${HOME}/scratch/workdir/hoomd/hoomd.py312/bin/python \
 -m hoomd
 # python: No module named hoomd.__main__; 'hoomd' is a package and cannot be directly executed
 ```
 
-## Resolve the LOG_CAT_ML HCOLL issue
+## Get Familiar with ASPIRE-2A PBS allocation
 
-To address the HCOLL issue in the pre-built OpenMPI, where you encounter the following error
+Run the following 1-second request with different qsub resource definition parameters, and check the output files. 
 
-`[LOG_CAT_ML] component basesmuma is not available but requested in hierarchy: basesmuma,basesmuma,ucx_p2p:basesmsocket,basesmuma,p2p
-[LOG_CAT_ML] ml_discover_hierarchy exited with error`
+```bash
+#!/bin/bash
+#PBS -P 50000022
+#PBS -l walltime=1
+#PBS -j oe
+#PBS -M 393958790@qq.com
+#PBS -m abe
+##PBS -l other=hyperthread
 
-Follow these steps:
+module purge
+module load openmpi/4.1.2-hpe
+module load libfabric/1.11.0.4.125
 
-1. Download and unpack HPC-X
-2. Load HPC-X OpenMPI module file instead of prebuilt openmpi/4.1.5 before launching the MPI task
+env
+lscpu
 
+mpirun --report-bindings \
+-oversubscribe -use-hwthread-cpus \
+hostname
 ```
-time wget -P ${HOME} https://content.mellanox.com/hpc/hpc-x/v2.20/hpcx-v2.20-gcc-mlnx_ofed-redhat8-cuda12-x86_64.tbz
-# real	0m34.912s
-time tar -C ${HOME} -xf ${HOME}/hpcx-v2.20-gcc-mlnx_ofed-redhat8-cuda12-x86_64.tbz
-# real	1m1.152s
+
+Submit it
+
+```bash
+qsub -l select=2:ncpus=127 hostname.sh
 ```
+
+
 
 # Run the Task 
 
@@ -108,27 +151,27 @@ Create a shell script file, `${HOME}/run/hoomd.sh`, with following contents
 
 ```bash
 #!/bin/bash
+#PBS -P 50000022
+#PBS -l walltime=00:00:60
 #PBS -j oe
 #PBS -M 393958790@qq.com
 #PBS -m abe
-#PBS -P xs75
-#PBS -l ngpus=0
-#PBS -l walltime=00:00:60
-##PBS -l other=hyperthread
-#-report-bindings \
+##-map-by ppr:$((2*${NCPUS})):node \
+##-bind-to hwthread -use-hwthread-cpus \
+##-report-bindings \
 
 module purge
-module load ${HOME}/hpcx-v2.20-gcc-mlnx_ofed-redhat8-cuda12-x86_64/modulefiles/hpcx-ompi
-
-hosts=$(sort -u ${PBS_NODEFILE} | paste -sd ',')
+module load openmpi/4.1.2-hpe
+module load libfabric/1.11.0.4.125
 
 cmd="time mpirun \
--host ${hosts} \
+-mca opal_common_ucx_opal_mem_hooks 1 \
 -wdir ${HOME}/scratch/workdir/hoomd \
 -output-filename ${HOME}/run/output/${PBS_JOBNAME}.${PBS_JOBID} \
+-oversubscribe \
 -map-by ppr:$((1*${NCPUS})):node \
--oversubscribe -use-hwthread-cpus \
--x PYTHONPATH=${HOME}/scratch/workdir/hoomd/build/hoomd-openmpi4.1.5:${HOME}/scratch/workdir/hoomd/hoomd-benchmarks \
+-bind-to core \
+-x PYTHONPATH=${HOME}/scratch/workdir/hoomd/build/hoomd-openmpi-4.1.2-hpe:${HOME}/scratch/workdir/hoomd/hoomd-benchmarks \
 ${HOME}/scratch/workdir/hoomd/hoomd.py312/bin/python \
 -m hoomd_benchmarks.md_pair_wca \
 --device CPU -v \
@@ -150,14 +193,16 @@ The following command
 ```bash
 cd ${HOME}/run
 
-nodes=1 walltime=00:00:300 \
-warmup_steps=40000 benchmark_steps=80000 repeat=1 N=200000 \
+nodes=8 walltime=00:00:200 \
+warmup_steps=10000 benchmark_steps=20000 repeat=1 N=2000000 \
 bash -c \
 'qsub -V \
--l walltime=${walltime},ncpus=$((48*nodes)),mem=$((48*nodes*1))gb \
+-l walltime=${walltime},select=${nodes}:ncpus=$((128*1)):mem=$((128*2))gb \
 -N hoomd.nodes${nodes}.WS${warmup_steps}.BS${benchmark_steps} \
 hoomd.sh'
 ```
+
+
 
 # Read the results
 
