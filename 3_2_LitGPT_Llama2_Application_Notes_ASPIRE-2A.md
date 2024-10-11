@@ -14,7 +14,7 @@ The following commands
 mkdir ${HOME}/scratch/workdir/llama -p
 time ${HOME}/miniconda/bin/conda create -p ${HOME}/scratch/workdir/llama/litgpt.py312 python=3.12 -y
 # real	0m41.773s
-time ${HOME}/scratch/workdir/llama/litgpt.py312/bin/pip install 'litgpt[all]'
+time ${HOME}/scratch/workdir/llama/litgpt.py312/bin/pip install 'litgpt[all]'==0.4.12
 # real	4m23.324s
 ```
 
@@ -107,13 +107,16 @@ cat $PBS_NODEFILE
 #hosts=$(sort -u ${PBS_NODEFILE} | paste -sd ',')
 #-host ${hosts} -np 8 \
 
+# While you may try enabling RDMA in the command line and get better performance, a quick way to achieve a workable distributed training is to disable it..
 cmd="mpirun \
 -wdir ${HOME}/scratch/workdir/llama \
 -output-filename ${HOME}/run/output/${PBS_JOBNAME}.${PBS_JOBID} \
 -map-by ppr:4:node -oversubscribe \
 -report-bindings \
 -x NCCL_DEBUG=INFO \
--x NCCL_NET_GDR_LEVEL=6 \
+-x NCCL_NET_GDR_LEVEL=0 \
+-x NCCL_IB_DISABLE=1 \
+-mca pml ^ucx \
 ${HOME}/scratch/workdir/llama/litgpt.py312/bin/litgpt \
 finetune_full \
 ${HOME}/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf \
@@ -130,6 +133,11 @@ ${HOME}/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf \
 echo ${cmd}
 
 exec ${cmd}
+
+# The following 3 lines are reference for your minimal distributed training trials
+#EleutherAI/pythia-70m \
+#--train.max_steps=1 \
+#--devices=4 --num_nodes=2"
 ```
 
 ## Submit the job script to PBS
@@ -137,11 +145,12 @@ exec ${cmd}
 ```bash
 cd ${HOME}/run
 
-nodes=2 walltime=00:00:200 \
+# CAUTION: This dangerous qsub command may result in 2 hours of billable time with no useful output for inexperienced users
+nodes=2 walltime=7201 \
 global_batch_size=128 micro_batch_size=32 max_steps=20 \
 bash -c \
 'qsub -V \
--l walltime=${walltime},ngpus=$((4)) \
+-l walltime=${walltime},select=${nodes}:ngpus=4 \
 -N llama.nodes${nodes}.GBS${global_batch_size}.MBS${micro_batch_size} \
 llama.sh'
 ```
@@ -149,6 +158,7 @@ llama.sh'
 ## Check runtime log
 
 ```bash
+# Kill the job if the log becomes unresponsive
 tail -f ${HOME}/run/output/llama.nodes2.GBS64.MBS8.{PBS_JOBNAME.PBS_JOBID}.pbs-101/1/rank.*/std*
 ```
 
@@ -157,7 +167,8 @@ tail -f ${HOME}/run/output/llama.nodes2.GBS64.MBS8.{PBS_JOBNAME.PBS_JOBID}.pbs-1
 The performance results of LitGPT Llama2 training are measured in “Training time”. The lower the value, the better.
 
 ```
-grep "Training time: 418.99s" ${HOME}/run/llama.* -r
-#llama.nodes2.GBS128.MBS32.o124452549:Training time: 422.16s
-```
+$ grep "Training time" /${HOME}/run/output/llama.nodes2.GBS128.MBS32.8335473.pbs101/1/rank.*/*
+output/llama.nodes2.GBS128.MBS32.8335473.pbs101/1/rank.0/stdout:Training time: 41.42s
+output/llama.nodes2.GBS128.MBS32.8335473.pbs101/1/rank.4/stdout:Training time: 41.51s
 
+```

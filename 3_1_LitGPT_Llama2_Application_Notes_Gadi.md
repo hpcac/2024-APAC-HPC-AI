@@ -14,7 +14,7 @@ The following commands
 mkdir ${HOME}/scratch/workdir/llama -p
 time conda create -p ${HOME}/scratch/workdir/llama/litgpt.py312 python=3.12 -y
 # real	1m49.484s
-time ${HOME}/scratch/workdir/llama/litgpt.py312/bin/pip install 'litgpt[all]'
+time ${HOME}/scratch/workdir/llama/litgpt.py312/bin/pip install 'litgpt[all]'==0.4.12
 # real	4m23.324s
 ```
 
