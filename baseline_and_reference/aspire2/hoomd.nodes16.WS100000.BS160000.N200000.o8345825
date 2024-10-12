@@ -1,0 +1,51 @@
+time mpirun -mca opal_common_ucx_opal_mem_hooks 1 -wdir /home/users/industry/ai-hpc/apacsc22/scratch/workdir/hoomd -output-filename /home/users/industry/ai-hpc/apacsc22/run/output/hoomd.nodes16.WS100000.BS160000.N200000.8345825.pbs101 -oversubscribe -map-by ppr:128:node -bind-to core -x PYTHONPATH=/home/users/industry/ai-hpc/apacsc22/scratch/workdir/hoomd/build/hoomd-openmpi-4.1.2-hpe:/home/users/industry/ai-hpc/apacsc22/scratch/workdir/hoomd/hoomd-benchmarks /home/users/industry/ai-hpc/apacsc22/scratch/workdir/hoomd/hoomd.py312/bin/python -m hoomd_benchmarks.md_pair_wca --device CPU -v -N 200000 --repeat 1 --warmup_steps 100000 --benchmark_steps 160000
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca opal_warn_on_missing_libcuda 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c5s6b0n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[x1002c4s4b1n1:907847] 2047 more processes have sent help message help-mpi-common-cuda.txt / dlopen failed
+[x1002c4s4b1n1:907847] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[x1002c4s4b1n1:907847] 2047 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+Using existing initial_configuration_cache/hard_sphere_200000_1.0_3.gsd
+notice(2): Using domain decomposition: n_x = 8 n_y = 16 n_z = 16.
+Running MDPairWCA benchmark
+.. warming up for 100000 steps
+.. running for 160000 steps 1 time(s)
+.. 3394.945583796434 time steps per second
+3394.945583796434
+3729.71user 6883.54system 1:44.02elapsed 10202%CPU (0avgtext+0avgdata 434492maxresident)k
+127392inputs+760outputs (0major+2632418minor)pagefaults 0swaps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2024-10-12 19:01:32.692811:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 8345825.pbs101
+	Project: 50000022
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(2048), Used(2048)
+	CPU Time Used: 02:56:53
+	Memory: Requested(4096gb), Used(32229196kb)
+	Vmem Used: 86252192kb
+	Walltime: Requested(00:05:00), Used(00:01:45)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (x1002c4s4b1n1:ncpus=128:mem=268435456kb)+(x1002c4s6b1n1:ncpus=128:mem=268435456kb)+(x1002c4s7b0n1:ncpus=128:mem=268435456kb)+(x1002c5s2b1n0:ncpus=128:mem=268435456kb)+(x1002c5s2b1n1:ncpus=128:mem=268435456kb)+(x1002c5s3b1n0:ncpus=128:mem=268435456kb)+(x1002c5s3b1n1:ncpus=128:mem=268435456kb)+(x1002c5s4b0n0:ncpus=128:mem=268435456kb)+(x1002c5s6b0n1:ncpus=128:mem=268435456kb)+(x1002c5s7b1n0:ncpus=128:mem=268435456kb)+(x1002c6s2b0n0:ncpus=128:mem=268435456kb)+(x1002c6s3b1n0:ncpus=128:mem=268435456kb)+(x1002c6s3b1n1:ncpus=128:mem=268435456kb)+(x1002c6s4b0n1:ncpus=128:mem=268435456kb)+(x1002c7s1b0n0:ncpus=128:mem=268435456kb)+(x1002c7s6b1n0:ncpus=128:mem=268435456kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

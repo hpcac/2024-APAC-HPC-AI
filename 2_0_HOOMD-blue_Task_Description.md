@@ -13,14 +13,14 @@ Participants are required to optimize the following workload for improved perfor
 - **Input data**:hard_sphere_200000_1.0_3.gsd`
 - **Recommended warm up and benchmark iterations**
 
-| Number of nodes | NCI Gadi iterations<br />(Warm up/Benchmark) | NSCC SG Aspire-2A iterations<br />(Warm up/Benchmark) |
-| --------------- | -------------------------------------------- | ----------------------------------------------------- |
-| 32              | 10,000/320,000                               | 1/1 {Failed to run}                                   |
-| 16              | 10,000/160,000                               | 1/1 {Failed to run}                                   |
-| 8               | 40,000/80,000                                | 40,000/80,000                                         |
-| 4               | 40,000/80,000                                | 40,000/80,000                                         |
-| 2               | 40,000/80,000                                | 40,000/80,000                                         |
-| 1               | 40,000/80,000                                | 40,000/80,000                                         |
+| Number of<br /> nodes | NCI Gadi iterations<br />Warm up/Benchmark | Gadi Baseline<br />time steps per second | NSCC SG Aspire-2A iterations<br />Warm up/Benchmark | Aspire-2A Baseline<br />time steps per second |
+| --------------------- | ------------------------------------------ | ---------------------------------------- | --------------------------------------------------- | --------------------------------------------- |
+| 32                    | 10,000/320,000                             | 5847                                     | 10,000/320,000                                      | 3897                                          |
+| 16                    | 10,000/160,000                             | 4406                                     | 10,000/160,000                                      | 3394                                          |
+| 8                     | 40,000/80,000                              | 3158                                     | 40,000/80,000                                       | 3105                                          |
+| 4                     | 40,000/80,000                              | 1877                                     | 40,000/80,000                                       | 2741                                          |
+| 2                     | 40,000/80,000                              | 988                                      | 40,000/80,000                                       | 1813                                          |
+| 1                     | 40,000/80,000                              | 414                                      | 40,000/80,000                                       | 1096                                          |
 
 ## 2. Submission and Presentation
 

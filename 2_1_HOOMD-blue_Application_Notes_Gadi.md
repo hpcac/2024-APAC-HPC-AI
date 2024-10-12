@@ -117,6 +117,7 @@ Create a shell script file, `${HOME}/run/hoomd.sh`, with following contents
 ##PBS -l other=hyperthread
 #-report-bindings \
 
+date
 module purge
 module load ${HOME}/hpcx-v2.20-gcc-mlnx_ofed-redhat8-cuda12-x86_64/modulefiles/hpcx-ompi
 
@@ -138,6 +139,7 @@ ${HOME}/scratch/workdir/hoomd/hoomd.py312/bin/python \
 echo ${cmd}
 
 exec ${cmd}
+date
 ```
 
 ## Submit the job script to PBS
@@ -164,7 +166,14 @@ hoomd.sh'
 The performance results of HOOMD-blue are measured in “time steps per second”. The higher the value, the better.
 
 ```
-grep "time steps per second" ${HOME}/run/hoomd.* -r
-# hoomd.nodes4.WS40000.BS80000.o124445202:.. 1907.580855079795 time steps per second
-```
+$ grep "time steps per second" ${HOME}/run/hoomd*.N200000.* |sort  --version-sort
+/home/551/pz7344/run/hoomd.nodes1.WS40000.BS80000.N200000.o126652098:.. 414.4660591257386 time steps per second
+/home/551/pz7344/run/hoomd.nodes2.WS40000.BS80000.N200000.o126652165:.. 988.4693811106713 time steps per second
+/home/551/pz7344/run/hoomd.nodes4.WS40000.BS80000.N200000.o126652113:.. 1877.763554501254 time steps per second
+/home/551/pz7344/run/hoomd.nodes8.WS40000.BS80000.N200000.o126652114:.. 3158.200458957586 time steps per second
+/home/551/pz7344/run/hoomd.nodes16.WS40000.BS80000.N200000.o126652172:.. 4502.474588174126 time steps per second
+/home/551/pz7344/run/hoomd.nodes16.WS100000.BS160000.N200000.o126652132:.. 4406.744257681727 time steps per second
+/home/551/pz7344/run/hoomd.nodes32.WS40000.BS80000.N200000.o126652173:.. 5863.37070963423 time steps per second
+/home/551/pz7344/run/hoomd.nodes32.WS100000.BS160000.N200000.o126652137:.. 5847.372539795664 time steps per second
 
+```

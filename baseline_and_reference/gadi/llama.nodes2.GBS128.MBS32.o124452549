@@ -1,0 +1,1123 @@
+PBS_VMEM=34359738368
+CONDA_SHLVL=0
+PBS_ENVIRONMENT=PBS_BATCH
+LD_LIBRARY_PATH=/apps/openmpi/4.1.5/lib:/apps/openmpi/4.1.5/lib/profilers
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:
+CONDA_EXE=/home/551/pz7344/miniconda/bin/conda
+max_steps=20
+SSH_CONNECTION=43.254.66.34 18908 203.0.19.140 22
+UCC_TLS=^sharp
+VT_MAX_FLUSHES=0
+PBS_NCI_LAUNCH_COMPATIBILITY=0
+PBS_NCI_HT=0
+TZ=:/etc/localtime
+HISTCONTROL=ignoredups
+DISPLAY=localhost:14.0
+HOSTNAME=gadi-gpu-v100-0109.gadi.nci.org.au
+LD_RUN_PATH_modshare=/apps/openmpi/4.1.5/lib:1:/apps/openmpi/4.1.5/lib/profilers:1
+OLDPWD=/home/551/pz7344/run
+PBS_O_HOME=/home/551/pz7344
+C_INCLUDE_PATH=/apps/openmpi/4.1.5/include
+PBS_JOBID=124452549.gadi-pbs
+ENVIRONMENT=BATCH
+global_batch_size=128
+PATH_modshare=/bin:1:/usr/sbin:1:/apps/openmpi/wrapper/fortran:1:/usr/bin:1:/apps/openmpi/wrapper:1:/opt/Modules/v4.3.0/bin:1:/usr/local/sbin:1:/local/pbs/bin:1:/opt/pbs/default/bin:1:/apps/openmpi/4.1.5/bin:1
+LOADEDMODULES_modshare=openmpi/4.1.5:1:pbs:1
+PBS_NCI_NCPUS_PER_NODE=48
+PBS_JOBNAME=llama.nodes2.GBS128.MBS32
+FPATH=/apps/openmpi/4.1.5/include:/opt/Modules/v4.3.0/init/ksh-functions
+PBS_O_TZ=:/etc/localtime
+NCPUS=48
+FPATH_modshare=/opt/Modules/v4.3.0/init/ksh-functions:1:/apps/openmpi/4.1.5/include:1
+PBS_NCI_NCPUS_PER_NUMA=12
+CPATH_modshare=/apps/openmpi/4.1.5/include:1
+PBS_O_PATH=/apps/openmpi/wrapper/fortran:/apps/openmpi/wrapper:/apps/openmpi/4.1.5/bin:/home/551/pz7344/miniconda/condabin:/home/551/pz7344/.local/bin:/home/551/pz7344/bin:/opt/pbs/default/bin:/opt/nci/bin:/opt/bin:/opt/Modules/v4.3.0/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/default/bin
+PKG_CONFIG_PATH_modshare=/half-root/usr/lib64/pkgconfig:1
+C_INCLUDE_PATH_modshare=/apps/openmpi/4.1.5/include:1
+HCOLL_ENABLE_MCAST=0
+PBS_NNODES=2
+CPLUS_INCLUDE_PATH_modshare=/apps/openmpi/4.1.5/include:1
+_CE_M=
+which_declare=declare -f
+PBS_NCPUS=96
+LD_LIBRARY_PATH_modshare=/apps/openmpi/4.1.5/lib:1:/apps/openmpi/4.1.5/lib/profilers:1
+PBS_NCI_WD=0
+XDG_SESSION_ID=c1356657
+MODULES_CMD=/opt/Modules/v4.3.0/libexec/modulecmd.tcl
+LIBRARY_PATH_modshare=/apps/openmpi/4.1.5/lib:1:/apps/openmpi/4.1.5/lib/profilers:1
+PBS_O_WORKDIR=/home/551/pz7344/run
+USER=pz7344
+ENV=/opt/Modules/v4.3.0/init/profile.sh
+PBS_JOBFS=/jobfs/124452549.gadi-pbs
+micro_batch_size=32
+PBS_NODEFILE=/local/spool/pbs/aux/124452549.gadi-pbs
+OPENMPI_BASE=/apps/openmpi/4.1.5
+PBS_TASKNUM=1
+PBS_NCI_IMAGE=
+PWD=/home/551/pz7344
+PBS_NGPUS=8
+MODULES_LMCONFLICT_modshare=openmpi/4.1.5&mpi&lam&mpich&openmpi&intel-mpi&o/wrappers&o/yes-wrappers&o/use-wrappers&o/enable-wrappers&o/with-wrappers&o/no-wrappers&o/not-wrappers&o/disable-wrappers&o/without-wrappers&o/ld_library_path&o/yes-ld_library_path&o/use-ld_library_path&o/enable-ld_library_path&o/with-ld_library_path&o/no-ld_library_path&o/not-ld_library_path&o/disable-ld_library_path&o/without-ld_library_path&o/ld_run_path&o/yes-ld_run_path&o/use-ld_run_path&o/enable-ld_run_path&o/with-ld_run_path&o/no-ld_run_path&o/not-ld_run_path&o/disable-ld_run_path&o/without-ld_run_path&o/show-debug&o/yes-show-debug&o/use-show-debug&o/enable-show-debug&o/with-show-debug&o/no-show-debug&o/not-show-debug&o/disable-show-debug&o/without-show-debug&o/append-paths&o/yes-append-paths&o/use-append-paths&o/enable-append-paths&o/with-append-paths&o/no-append-paths&o/not-append-paths&o/disable-append-paths&o/without-append-paths&o/library_path&o/yes-library_path&o/use-library_path&o/enable-library_path&o/with-library_path&o/no-library_path&o/not-library_path&o/disable-library_path&o/without-library_path&o/packaged-envvars&o/yes-packaged-envvars&o/use-packaged-envvars&o/enable-packaged-envvars&o/with-packaged-envvars&o/no-packaged-envvars&o/not-packaged-envvars&o/disable-packaged-envvars&o/without-packaged-envvars:1
+HOME=/home/551/pz7344
+OMPI_VERSION=4.1.5
+CONDA_PYTHON_EXE=/home/551/pz7344/miniconda/bin/python
+SSH_CLIENT=43.254.66.34 18908 22
+CPATH=/apps/openmpi/4.1.5/include
+PBS_MOMPORT=15003
+OPENMPI_ROOT=/apps/openmpi/4.1.5
+OPENMPI_VERSION=4.1.5
+BASH_ENV=/opt/Modules/v4.3.0/init/bash
+_LMFILES__modshare=/opt/Modules/modulefiles/pbs:1:/apps/Modules/modulefiles/openmpi/4.1.5:1
+OMPI_ROOT=/apps/openmpi/4.1.5
+PROJECT=xs75
+_CE_CONDA=
+OMPI_MCA_orte_tmpdir_base=/jobfs/124452549.gadi-pbs
+PBS_JOBCOOKIE=4E9DE4D269DB5C5E35F0977306C0B3F0
+PBS_NCI_NUMA_PER_NODE=4
+PBS_O_SHELL=/bin/bash
+TMPDIR=/jobfs/124452549.gadi-pbs
+LIBRARY_PATH=/apps/openmpi/4.1.5/lib:/apps/openmpi/4.1.5/lib/profilers
+LOADEDMODULES=pbs:openmpi/4.1.5
+SSH_TTY=/dev/pts/79
+OMPI_BASE=/apps/openmpi/4.1.5
+PBS_O_QUEUE=gpuvolta
+MODULES_LMCONFLICT=openmpi/4.1.5&mpi&lam&mpich&openmpi&intel-mpi&o/wrappers&o/yes-wrappers&o/use-wrappers&o/enable-wrappers&o/with-wrappers&o/no-wrappers&o/not-wrappers&o/disable-wrappers&o/without-wrappers&o/ld_library_path&o/yes-ld_library_path&o/use-ld_library_path&o/enable-ld_library_path&o/with-ld_library_path&o/no-ld_library_path&o/not-ld_library_path&o/disable-ld_library_path&o/without-ld_library_path&o/ld_run_path&o/yes-ld_run_path&o/use-ld_run_path&o/enable-ld_run_path&o/with-ld_run_path&o/no-ld_run_path&o/not-ld_run_path&o/disable-ld_run_path&o/without-ld_run_path&o/show-debug&o/yes-show-debug&o/use-show-debug&o/enable-show-debug&o/with-show-debug&o/no-show-debug&o/not-show-debug&o/disable-show-debug&o/without-show-debug&o/append-paths&o/yes-append-paths&o/use-append-paths&o/enable-append-paths&o/with-append-paths&o/no-append-paths&o/not-append-paths&o/disable-append-paths&o/without-append-paths&o/library_path&o/yes-library_path&o/use-library_path&o/enable-library_path&o/with-library_path&o/no-library_path&o/not-library_path&o/disable-library_path&o/without-library_path&o/packaged-envvars&o/yes-packaged-envvars&o/use-packaged-envvars&o/enable-packaged-envvars&o/with-packaged-envvars&o/no-packaged-envvars&o/not-packaged-envvars&o/disable-packaged-envvars&o/without-packaged-envvars
+MAIL=/var/spool/mail/pz7344
+SHELL=/bin/bash
+TERM=xterm
+PBS_NCI_FS_GDATA1A=0
+PBS_NCI_FS_GDATA1B=0
+MANPATH_modshare=/apps/openmpi/4.1.5/share/man:1::1:/opt/pbs/default/share/man:2:/local/pbs/share/man:1
+walltime=00:00:600
+PBS_NCI_JOBFS=209715200b
+LD_RUN_PATH=/apps/openmpi/4.1.5/lib:/apps/openmpi/4.1.5/lib/profilers
+SHLVL=4
+PBS_O_HOST=gadi-login-09.gadi.nci.org.au
+PBS_O_SYSTEM=Linux
+VT_PFORM_LDIR=/jobfs/124452549.gadi-pbs
+MANPATH=/apps/openmpi/4.1.5/share/man:/opt/pbs/default/share/man:::/local/pbs/share/man
+UCC_LOG_LEVEL=ERROR
+PBS_O_LOGNAME=pz7344
+PBS_NODENUM=0
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/opt/Modules/modulefiles:/opt/Modules/v4.3.0/modulefiles:/apps/Modules/modulefiles
+PBS_JOBDIR=/home/551/pz7344
+LOGNAME=pz7344
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/18268/bus
+PBS_NCI_FS_GDATA2=0
+PBS_NCI_STORAGE=scratch/xs75
+PBS_NCI_FS_GDATA3=0
+XDG_RUNTIME_DIR=/run/user/18268
+PBS_NCI_FS_GDATA1=0
+PBS_NCI_FS_GDATA4=0
+nodes=2
+CPLUS_INCLUDE_PATH=/apps/openmpi/4.1.5/include
+MODULEPATH_modshare=/opt/Modules/modulefiles:1:/opt/Modules/v4.3.0/modulefiles:1:/apps/Modules/modulefiles:1
+PATH=/apps/openmpi/wrapper/fortran:/apps/openmpi/wrapper:/apps/openmpi/4.1.5/bin:/opt/Modules/v4.3.0/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/local/pbs/bin:/opt/pbs/default/bin
+_LMFILES_=/opt/Modules/modulefiles/pbs:/apps/Modules/modulefiles/openmpi/4.1.5
+NCI_PATH_SET=1
+DEBUGINFOD_URLS=https://debuginfod.centos.org/
+PBS_QUEUE=gpuvolta-exec
+MODULESHOME=/opt/Modules/v4.3.0
+PKG_CONFIG_PATH=/half-root/usr/lib64/pkgconfig
+HISTSIZE=1000
+CVS_RSH=ssh
+OMP_NUM_THREADS=1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+PBS_O_MAIL=/var/spool/mail/pz7344
+BASH_FUNC_which%%=() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+BASH_FUNC_module%%=() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre}/usr/bin/tclsh /opt/Modules/v4.3.0/libexec/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh /opt/Modules/v4.3.0/libexec/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre}/usr/bin/tclsh /opt/Modules/v4.3.0/libexec/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh /opt/Modules/v4.3.0/libexec/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}
+BASH_FUNC_switchml%%=() {  typeset swfound=1;
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ typeset swname='main';
+ if [ -e /opt/Modules/v4.3.0/libexec/modulecmd.tcl ]; then
+ typeset swfound=0;
+ unset MODULES_USE_COMPAT_VERSION;
+ fi;
+ else
+ typeset swname='compatibility';
+ if [ -e /opt/Modules/v4.3.0/libexec/modulecmd-compat ]; then
+ typeset swfound=0;
+ MODULES_USE_COMPAT_VERSION=1;
+ export MODULES_USE_COMPAT_VERSION;
+ fi;
+ fi;
+ if [ $swfound -eq 0 ]; then
+ echo "Switching to Modules $swname version";
+ source /opt/Modules/v4.3.0/init/bash;
+ else
+ echo "Cannot switch to Modules $swname version, command not found";
+ return 1;
+ fi
+}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then
+ eval "module $@";
+ else
+ /usr/bin/scl "$@";
+ fi
+}
+_=/bin/env
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0109.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+gadi-gpu-v100-0038.gadi.nci.org.au
+mpirun -wdir /home/551/pz7344/scratch/workdir/llama -output-filename /home/551/pz7344/run/output/llama.nodes2.GBS128.MBS32.124452549.gadi-pbs -map-by ppr:4:node -oversubscribe -report-bindings -x NCCL_DEBUG=INFO -x NCCL_NET_GDR_LEVEL=6 /home/551/pz7344/scratch/workdir/llama/litgpt.py312/bin/litgpt finetune_full /home/551/pz7344/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf --out_dir /home/551/pz7344/scratch/workdir/llama/out/finetune/full --data JSON --data.json_path /home/551/pz7344/scratch/workdir/llama/dataset/alpaca1024 --config /home/551/pz7344/scratch/workdir/llama/full.yaml --eval.final_validation=false --train.epochs=1 --devices=4 --num_nodes=2 --train.max_steps=20 --train.global_batch_size=128 --train.micro_batch_size=32
+[gadi-gpu-v100-0109.gadi.nci.org.au:2528871] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././././././././././././././././././.][./././././././././././././././././././././././.]
+[gadi-gpu-v100-0109.gadi.nci.org.au:2528871] MCW rank 1 bound to socket 0[core 1[hwt 0]]: [./B/./././././././././././././././././././././.][./././././././././././././././././././././././.]
+[gadi-gpu-v100-0109.gadi.nci.org.au:2528871] MCW rank 2 bound to socket 0[core 2[hwt 0]]: [././B/././././././././././././././././././././.][./././././././././././././././././././././././.]
+[gadi-gpu-v100-0109.gadi.nci.org.au:2528871] MCW rank 3 bound to socket 0[core 3[hwt 0]]: [./././B/./././././././././././././././././././.][./././././././././././././././././././././././.]
+[gadi-gpu-v100-0038.gadi.nci.org.au:1025757] MCW rank 4 bound to socket 0[core 0[hwt 0]]: [B/././././././././././././././././././././././.][./././././././././././././././././././././././.]
+[gadi-gpu-v100-0038.gadi.nci.org.au:1025757] MCW rank 5 bound to socket 0[core 1[hwt 0]]: [./B/./././././././././././././././././././././.][./././././././././././././././././././././././.]
+[gadi-gpu-v100-0038.gadi.nci.org.au:1025757] MCW rank 6 bound to socket 0[core 2[hwt 0]]: [././B/././././././././././././././././././././.][./././././././././././././././././././././././.]
+[gadi-gpu-v100-0038.gadi.nci.org.au:1025757] MCW rank 7 bound to socket 0[core 3[hwt 0]]: [./././B/./././././././././././././././././././.][./././././././././././././././././././././././.]
+uvloop is not installed. Falling back to the default asyncio event loop.
+uvloop is not installed. Falling back to the default asyncio event loop.
+uvloop is not installed. Falling back to the default asyncio event loop.
+uvloop is not installed. Falling back to the default asyncio event loop.
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/litgpt/args.py:49: UserWarning: `--train.lr_warmup_steps` should be less than `--train.max_steps`. Got 100 lr_warmup_steps and 20 max_steps.
+  warnings.warn(
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/litgpt/args.py:49: UserWarning: `--train.lr_warmup_steps` should be less than `--train.max_steps`. Got 100 lr_warmup_steps and 20 max_steps.
+  warnings.warn(
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/litgpt/args.py:49: UserWarning: `--train.lr_warmup_steps` should be less than `--train.max_steps`. Got 100 lr_warmup_steps and 20 max_steps.
+  warnings.warn(
+{'access_token': None,
+ 'checkpoint_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf'),
+ {'access_token': None,
+ 'checkpoint_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf'),
+ {'access_token': None,
+ 'checkpoint_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf'),
+ 'data': JSON(json_path=PosixPath('/home/551/pz7344/scratch/workdir/llama/dataset/alpaca1024'),
+              mask_prompt=False,
+              val_split_fraction=None,
+              prompt_style=<litgpt.prompts.Alpaca object at 0x1514a0052d80>,
+              ignore_index=-100,
+              seed=42,
+              num_workers=4),
+ 'devices': 4,
+ 'eval': EvalArgs(interval=25000,
+                  max_new_tokens=100,
+                  max_iters=100,
+                  initial_validation=False,
+                  'data': JSON(json_path=PosixPath('/home/551/pz7344/scratch/workdir/llama/dataset/alpaca1024'),
+              mask_prompt=False,
+              val_split_fraction=None,
+              prompt_style=<litgpt.prompts.Alpaca object at 0x154703646540>,
+              ignore_index=-100,
+              seed=42,
+              num_workers=4),
+ 'devices': 4,
+ 'eval': EvalArgs(interval=25000,
+                  max_new_tokens=100,
+                  max_iters=100,
+                  initial_validation=False,
+                  final_validation=False),
+ 'logger_name': 'csv',
+ 'data': JSON(json_path=PosixPath('/home/551/pz7344/scratch/workdir/llama/dataset/alpaca1024'),
+              mask_prompt=False,
+              val_split_fraction=None,
+              prompt_style=<litgpt.prompts.Alpaca object at 0x1530f5837860>,
+              ignore_index=-100,
+              seed=42,
+              num_workers=4),
+ 'devices': 4,
+ 'eval': EvalArgs(interval=25000,
+                  max_new_tokens=100,
+                  max_iters=100,
+                  initial_validation=False,
+                  final_validation=False),
+ 'logger_name': 'csv',
+ 'num_nodes': 2,
+ 'optimizer': 'AdamW',
+ 'num_nodes': 2,
+ 'optimizer': 'AdamW',
+ 'out_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/out/finetune/full'),
+ 'precision': 'bf16-true',
+ 'resume': False,
+ 'seed': 1337,
+ 'train': TrainArgs(save_interval=20000,
+                    log_interval=1,
+                    global_batch_size=128,
+                    micro_batch_size=32,
+                    lr_warmup_steps=100,
+                    lr_warmup_fraction=None,
+                    epochs=1,
+                    max_tokens=None,
+                    max_steps=20,
+                    max_seq_length=512,
+                    tie_embeddings=None,
+                    max_norm=None,
+                    min_lr=6e-05)}
+final_validation=False),
+ 'logger_name': 'csv',
+ 'num_nodes': 2,
+ 'optimizer': 'AdamW',
+ 'out_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/out/finetune/full'),
+ 'precision': 'bf16-true',
+ 'resume': False,
+ 'seed': 1337,
+ 'train': TrainArgs(save_interval=20000,
+                    log_interval=1,
+                    global_batch_size=128,
+                    micro_batch_size=32,
+                    lr_warmup_steps=100,
+                    lr_warmup_fraction=None,
+                    epochs=1,
+                    max_tokens=None,
+                    max_steps=20,
+                    max_seq_length=512,
+                    tie_embeddings=None,
+                    max_norm=None,
+                    min_lr=6e-05)}
+'out_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/out/finetune/full'),
+ 'precision': 'bf16-true',
+ 'resume': False,
+ 'seed': 1337,
+ 'train': TrainArgs(save_interval=20000,
+                    log_interval=1,
+                    global_batch_size=128,
+                    micro_batch_size=32,
+                    lr_warmup_steps=100,
+                    lr_warmup_fraction=None,
+                    epochs=1,
+                    max_tokens=None,
+                    max_steps=20,
+                    max_seq_length=512,
+                    tie_embeddings=None,
+                    max_norm=None,
+                    min_lr=6e-05)}
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/litgpt/args.py:49: UserWarning: `--train.lr_warmup_steps` should be less than `--train.max_steps`. Got 100 lr_warmup_steps and 20 max_steps.
+  warnings.warn(
+{'access_token': None,
+ 'checkpoint_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf'),
+ 'data': JSON(json_path=PosixPath('/home/551/pz7344/scratch/workdir/llama/dataset/alpaca1024'),
+              mask_prompt=False,
+              val_split_fraction=None,
+              prompt_style=<litgpt.prompts.Alpaca object at 0x150cceb5f4a0>,
+              ignore_index=-100,
+              seed=42,
+              num_workers=4),
+ 'devices': 4,
+ 'eval': EvalArgs(interval=25000,
+                  max_new_tokens=100,
+                  max_iters=100,
+                  initial_validation=False,
+                  final_validation=False),
+ 'logger_name': 'csv',
+ 'num_nodes': 2,
+ 'optimizer': 'AdamW',
+ 'out_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/out/finetune/full'),
+ 'precision': 'bf16-true',
+ 'resume': False,
+ 'seed': 1337,
+ 'train': TrainArgs(save_interval=20000,
+                    log_interval=1,
+                    global_batch_size=128,
+                    micro_batch_size=32,
+                    lr_warmup_steps=100,
+                    lr_warmup_fraction=None,
+                    epochs=1,
+                    max_tokens=None,
+                    max_steps=20,
+                    max_seq_length=512,
+                    tie_embeddings=None,
+                    max_norm=None,
+                    min_lr=6e-05)}
+uvloop is not installed. Falling back to the default asyncio event loop.
+uvloop is not installed. Falling back to the default asyncio event loop.
+uvloop is not installed. Falling back to the default asyncio event loop.
+uvloop is not installed. Falling back to the default asyncio event loop.
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/litgpt/args.py:49: UserWarning: `--train.lr_warmup_steps` should be less than `--train.max_steps`. Got 100 lr_warmup_steps and 20 max_steps.
+  warnings.warn(
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/litgpt/args.py:49: UserWarning: `--train.lr_warmup_steps` should be less than `--train.max_steps`. Got 100 lr_warmup_steps and 20 max_steps.
+  warnings.warn(
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/litgpt/args.py:49: UserWarning: `--train.lr_warmup_steps` should be less than `--train.max_steps`. Got 100 lr_warmup_steps and 20 max_steps.
+  warnings.warn(
+{'access_token': None,
+ {'access_token': None,
+ 'checkpoint_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf'),
+ {'access_token': None,
+ 'checkpoint_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf'),
+ 'checkpoint_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf'),
+ 'data': JSON(json_path=PosixPath('/home/551/pz7344/scratch/workdir/llama/dataset/alpaca1024'),
+              mask_prompt=False,
+              val_split_fraction=None,
+              prompt_style=<litgpt.prompts.Alpaca object at 0x151b40d3a210>,
+              ignore_index=-100,
+              seed=42,
+              'data': JSON(json_path=PosixPath('/home/551/pz7344/scratch/workdir/llama/dataset/alpaca1024'),
+              mask_prompt=False,
+              val_split_fraction=None,
+              prompt_style=<litgpt.prompts.Alpaca object at 0x151409872090>,
+              ignore_index=-100,
+              seed=42,
+              num_workers=4),
+ 'devices': 4,
+ num_workers=4),
+ 'devices': 4,
+ 'data': JSON(json_path=PosixPath('/home/551/pz7344/scratch/workdir/llama/dataset/alpaca1024'),
+              'eval': EvalArgs(interval=25000,
+                  max_new_tokens=100,
+                  max_iters=100,
+                  initial_validation=False,
+                  final_validation=False),
+ 'eval': EvalArgs(interval=25000,
+                  max_new_tokens=100,
+                  max_iters=100,
+                  initial_validation=False,
+                  final_validation=False),
+ 'logger_name': 'csv',
+ 'num_nodes': 2,
+ 'optimizer': 'AdamW',
+ 'out_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/out/finetune/full'),
+ 'precision': 'bf16-true',
+ 'logger_name': 'csv',
+ 'num_nodes': 2,
+ 'optimizer': 'AdamW',
+ 'out_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/out/finetune/full'),
+ 'resume': False,
+ 'seed': 1337,
+ 'train': TrainArgs(save_interval=20000,
+                    log_interval=1,
+                    global_batch_size=128,
+                    micro_batch_size=32,
+                    lr_warmup_steps=100,
+                    lr_warmup_fraction=None,
+                    mask_prompt=False,
+              val_split_fraction=None,
+              prompt_style=<litgpt.prompts.Alpaca object at 0x1551540ec830>,
+              ignore_index=-100,
+              'precision': 'bf16-true',
+ 'resume': False,
+ 'seed': 1337,
+ 'train': TrainArgs(save_interval=20000,
+                    log_interval=1,
+                    global_batch_size=128,
+                    micro_batch_size=32,
+                    lr_warmup_steps=100,
+                    epochs=1,
+                    max_tokens=None,
+                    max_steps=20,
+                    max_seq_length=512,
+                    tie_embeddings=None,
+                    lr_warmup_fraction=None,
+                    epochs=1,
+                    max_tokens=None,
+                    seed=42,
+              num_workers=4),
+ 'devices': 4,
+ max_norm=None,
+                    min_lr=6e-05)}
+max_steps=20,
+                    max_seq_length=512,
+                    tie_embeddings=None,
+                    max_norm=None,
+                    min_lr=6e-05)}
+'eval': EvalArgs(interval=25000,
+                  max_new_tokens=100,
+                  max_iters=100,
+                  initial_validation=False,
+                  final_validation=False),
+ 'logger_name': 'csv',
+ 'num_nodes': 2,
+ 'optimizer': 'AdamW',
+ 'out_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/out/finetune/full'),
+ 'precision': 'bf16-true',
+ 'resume': False,
+ 'seed': 1337,
+ 'train': TrainArgs(save_interval=20000,
+                    log_interval=1,
+                    global_batch_size=128,
+                    micro_batch_size=32,
+                    lr_warmup_steps=100,
+                    lr_warmup_fraction=None,
+                    epochs=1,
+                    max_tokens=None,
+                    max_steps=20,
+                    max_seq_length=512,
+                    tie_embeddings=None,
+                    max_norm=None,
+                    min_lr=6e-05)}
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/litgpt/args.py:49: UserWarning: `--train.lr_warmup_steps` should be less than `--train.max_steps`. Got 100 lr_warmup_steps and 20 max_steps.
+  warnings.warn(
+{'access_token': None,
+ 'checkpoint_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf'),
+ 'data': JSON(json_path=PosixPath('/home/551/pz7344/scratch/workdir/llama/dataset/alpaca1024'),
+              mask_prompt=False,
+              val_split_fraction=None,
+              prompt_style=<litgpt.prompts.Alpaca object at 0x1544b837c560>,
+              ignore_index=-100,
+              seed=42,
+              num_workers=4),
+ 'devices': 4,
+ 'eval': EvalArgs(interval=25000,
+                  max_new_tokens=100,
+                  max_iters=100,
+                  initial_validation=False,
+                  final_validation=False),
+ 'logger_name': 'csv',
+ 'num_nodes': 2,
+ 'optimizer': 'AdamW',
+ 'out_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/out/finetune/full'),
+ 'precision': 'bf16-true',
+ 'resume': False,
+ 'seed': 1337,
+ 'train': TrainArgs(save_interval=20000,
+                    log_interval=1,
+                    global_batch_size=128,
+                    micro_batch_size=32,
+                    lr_warmup_steps=100,
+                    lr_warmup_fraction=None,
+                    epochs=1,
+                    max_tokens=None,
+                    max_steps=20,
+                    max_seq_length=512,
+                    tie_embeddings=None,
+                    max_norm=None,
+                    min_lr=6e-05)}
+[LOG_CAT_ML] component basesmuma is not available but requested in hierarchy: basesmuma,basesmuma,ucx_p2p:basesmsocket,basesmuma,p2p
+[LOG_CAT_ML] ml_discover_hierarchy exited with error
+[LOG_CAT_ML] component basesmuma is not available but requested in hierarchy: basesmuma,basesmuma,ucx_p2p:basesmsocket,basesmuma,p2p
+[LOG_CAT_ML] ml_discover_hierarchy exited with error
+[LOG_CAT_ML] component basesmuma is not available but requested in hierarchy: basesmuma,basesmuma,ucx_p2p:basesmsocket,basesmuma,p2p
+[LOG_CAT_ML] ml_discover_hierarchy exited with error
+[LOG_CAT_ML] component basesmuma is not available but requested in hierarchy: basesmuma,basesmuma,ucx_p2p:basesmsocket,basesmuma,p2p
+[LOG_CAT_ML] ml_discover_hierarchy exited with error
+[LOG_CAT_ML] component basesmuma is not available but requested in hierarchy: basesmuma,basesmuma,ucx_p2p:basesmsocket,basesmuma,p2p
+[LOG_CAT_ML] ml_discover_hierarchy exited with error
+[LOG_CAT_ML] component basesmuma is not available but requested in hierarchy: basesmuma,basesmuma,ucx_p2p:basesmsocket,basesmuma,p2p
+[LOG_CAT_ML] ml_discover_hierarchy exited with error
+[LOG_CAT_ML] component basesmuma is not available but requested in hierarchy: basesmuma,basesmuma,ucx_p2p:basesmsocket,basesmuma,p2p
+[LOG_CAT_ML] ml_discover_hierarchy exited with error
+[LOG_CAT_ML] component basesmuma is not available but requested in hierarchy: basesmuma,basesmuma,ucx_p2p:basesmsocket,basesmuma,p2p
+[LOG_CAT_ML] ml_discover_hierarchy exited with error
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO Bootstrap : Using ib0:10.6.28.21<0>
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO cudaDriverVersion 12040
+NCCL version 2.20.5+cuda12.4
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO cudaDriverVersion 12040
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO cudaDriverVersion 12040
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO cudaDriverVersion 12040
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO Bootstrap : Using ib0:10.6.28.21<0>
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO Bootstrap : Using ib0:10.6.28.21<0>
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO Bootstrap : Using ib0:10.6.28.21<0>
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO cudaDriverVersion 12040
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO cudaDriverVersion 12040
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO cudaDriverVersion 12040
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO cudaDriverVersion 12040
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO Bootstrap : Using ib0:10.6.9.22<0>
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO Bootstrap : Using ib0:10.6.9.22<0>
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO Bootstrap : Using ib0:10.6.9.22<0>
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO Bootstrap : Using ib0:10.6.9.22<0>
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.6.9.22<0>
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.6.9.22<0>
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.6.9.22<0>
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.6.9.22<0>
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.6.28.21<0>
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.6.28.21<0>
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.6.28.21<0>
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.6.28.21<0>
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO comm 0xb9501c0 rank 3 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xddb2357dc3c44e46 - Init START
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO comm 0xd31d2d0 rank 2 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xddb2357dc3c44e46 - Init START
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO comm 0xc324f00 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xddb2357dc3c44e46 - Init START
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO comm 0xbabfa30 rank 1 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xddb2357dc3c44e46 - Init START
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO comm 0xc6a32b0 rank 5 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xddb2357dc3c44e46 - Init START
+
+gadi-gpu-v100-0109:2528901:2528901 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 0 and rank 1 both on CUDA device 3d000
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO init.cc:1746 -> 5
+
+gadi-gpu-v100-0109:2528904:2528904 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 3 and rank 0 both on CUDA device 3d000
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO init.cc:1746 -> 5
+
+gadi-gpu-v100-0109:2528902:2528902 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 1 and rank 0 both on CUDA device 3d000
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO comm 0xc0a6190 rank 7 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xddb2357dc3c44e46 - Init START
+
+gadi-gpu-v100-0109:2528903:2528903 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 2 and rank 0 both on CUDA device 3d000
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO comm 0xcf22320 rank 6 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xddb2357dc3c44e46 - Init START
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO comm 0xcbbb060 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xddb2357dc3c44e46 - Init START
+
+gadi-gpu-v100-0038:1025772:1025772 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 7 and rank 4 both on CUDA device 3d000
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO init.cc:1746 -> 5
+
+gadi-gpu-v100-0038:1025771:1025771 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 6 and rank 4 both on CUDA device 3d000
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO init.cc:1746 -> 5
+
+gadi-gpu-v100-0038:1025770:1025770 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 5 and rank 4 both on CUDA device 3d000
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO init.cc:1746 -> 5
+
+gadi-gpu-v100-0038:1025769:1025769 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 4 and rank 5 both on CUDA device 3d000
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO init.cc:1784 -> 5
+NCCL version 2.20.5+cuda12.4
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO comm 0x103951e0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xcfefd8134fed0620 - Init START
+
+gadi-gpu-v100-0038:1025769:1025769 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 0 and rank 1 both on CUDA device 3d000
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO comm 0x106fc020 rank 2 nranks 4 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xcfefd8134fed0620 - Init START
+
+gadi-gpu-v100-0038:1025771:1025771 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 2 and rank 0 both on CUDA device 3d000
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO comm 0xfe7cf10 rank 1 nranks 4 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xcfefd8134fed0620 - Init START
+
+gadi-gpu-v100-0038:1025770:1025770 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 1 and rank 0 both on CUDA device 3d000
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO comm 0xf8805a0 rank 3 nranks 4 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xcfefd8134fed0620 - Init START
+
+gadi-gpu-v100-0038:1025772:1025772 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 3 and rank 0 both on CUDA device 3d000
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0038:1025771:1025771 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0038:1025770:1025770 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0038:1025769:1025769 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO comm 0xf289ed0 rank 1 nranks 4 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xb30c77505aa78b66 - Init START
+
+gadi-gpu-v100-0109:2528902:2528902 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 1 and rank 0 both on CUDA device 3d000
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO comm 0xfb0ea90 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xb30c77505aa78b66 - Init START
+
+gadi-gpu-v100-0109:2528901:2528901 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 0 and rank 1 both on CUDA device 3d000
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO comm 0x10af7270 rank 2 nranks 4 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xb30c77505aa78b66 - Init START
+
+gadi-gpu-v100-0109:2528903:2528903 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 2 and rank 0 both on CUDA device 3d000
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO comm 0xf12a8a0 rank 3 nranks 4 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xb30c77505aa78b66 - Init START
+
+gadi-gpu-v100-0109:2528904:2528904 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 3 and rank 0 both on CUDA device 3d000
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0109:2528902:2528902 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0109:2528903:2528903 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0109:2528901:2528901 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0109:2528904:2528904 [0] NCCL INFO init.cc:1784 -> 5
+All GPUs are fully connected via NVLink.
+All GPUs are fully connected via NVLink.
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/8
+Initializing distributed: GLOBAL_RANK: 4, MEMBER: 5/8
+Initializing distributed: GLOBAL_RANK: 5, MEMBER: 6/8
+Initializing distributed: GLOBAL_RANK: 6, MEMBER: 7/8
+Initializing distributed: GLOBAL_RANK: 7, MEMBER: 8/8
+Initializing distributed: GLOBAL_RANK: 1, MEMBER: 2/8
+Initializing distributed: GLOBAL_RANK: 2, MEMBER: 3/8
+Initializing distributed: GLOBAL_RANK: 3, MEMBER: 4/8
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 8 processes
+----------------------------------------------------------------------------------------------------
+
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Seed set to 1337
+Seed set to 1337
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Seed set to 1337
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Seed set to 1337
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Seed set to 1337
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Seed set to 1337
+Seed set to 1337
+Seed set to 1337
+Number of trainable parameters: 6,738,415,616
+Number of trainable parameters: 6,738,415,616
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO Using network IB
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO comm 0x175761a0 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0x948699ca8ca794f8 - Init START
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO comm 0x17c3de90 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 3e000 commId 0x948699ca8ca794f8 - Init START
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO comm 0x17abbf90 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId b2000 commId 0x948699ca8ca794f8 - Init START
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO comm 0x19489a40 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId b1000 commId 0x948699ca8ca794f8 - Init START
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO comm 0x17ddbc20 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0x948699ca8ca794f8 - Init START
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO comm 0x1909ebf0 rank 6 nranks 8 cudaDev 2 nvmlDev 2 busId b1000 commId 0x948699ca8ca794f8 - Init START
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO comm 0x182121e0 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId b2000 commId 0x948699ca8ca794f8 - Init START
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO comm 0x1881fdd0 rank 5 nranks 8 cudaDev 1 nvmlDev 1 busId 3e000 commId 0x948699ca8ca794f8 - Init START
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to SYS
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to SYS
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to SYS
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO NVLS multicast support is not available on dev 3
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO Setting affinity for GPU 1 to 02
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO NVLS multicast support is not available on dev 1
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to SYS
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO NVLS multicast support is not available on dev 2
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO Setting affinity for GPU 0 to 01
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO NVLS multicast support is not available on dev 0
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to SYS
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to SYS
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to SYS
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO Setting affinity for GPU 0 to 01
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO NVLS multicast support is not available on dev 0
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO NVLS multicast support is not available on dev 2
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to SYS
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO Setting affinity for GPU 1 to 02
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO NVLS multicast support is not available on dev 1
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO NVLS multicast support is not available on dev 3
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO comm 0x17abbf90 rank 3 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO Trees [0] 0/-1/-1->3->2 [1] 0/-1/-1->3->2
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO P2P Chunksize set to 131072
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO comm 0x17c3de90 rank 1 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO P2P Chunksize set to 131072
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO comm 0x19489a40 rank 2 nRanks 8 nNodes 2 localRanks 4 localRank 2 MNNVL 0
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Trees [0] 3/6/-1->2->-1 [1] 3/-1/-1->2->6
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO P2P Chunksize set to 131072
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO comm 0x175761a0 rank 0 nRanks 8 nNodes 2 localRanks 4 localRank 0 MNNVL 0
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO Channel 00/02 :    0   3   6   5   4   7   2   1
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO Channel 01/02 :    0   3   6   5   4   7   2   1
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO Trees [0] 1/-1/-1->0->3 [1] 1/-1/-1->0->3
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO P2P Chunksize set to 131072
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO comm 0x182121e0 rank 7 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Trees [0] 4/-1/-1->7->6 [1] 4/-1/-1->7->6
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO P2P Chunksize set to 131072
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO comm 0x17ddbc20 rank 4 nRanks 8 nNodes 2 localRanks 4 localRank 0 MNNVL 0
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO comm 0x1909ebf0 rank 6 nRanks 8 nNodes 2 localRanks 4 localRank 2 MNNVL 0
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO comm 0x1881fdd0 rank 5 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO Trees [0] 5/-1/-1->4->7 [1] 5/-1/-1->4->7
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO P2P Chunksize set to 131072
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO Trees [0] -1/-1/-1->5->4 [1] -1/-1/-1->5->4
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO P2P Chunksize set to 131072
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Trees [0] 7/-1/-1->6->2 [1] 7/2/-1->6->-1
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO P2P Chunksize set to 131072
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO Channel 00/0 : 0[0] -> 3[3] via P2P/CUMEM
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO Channel 00/0 : 4[0] -> 7[3] via P2P/CUMEM
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO Channel 01/0 : 4[0] -> 7[3] via P2P/CUMEM
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO Channel 01/0 : 0[0] -> 3[3] via P2P/CUMEM
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Channel 00/0 : 7[3] -> 2[2] [receive] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Channel 01/0 : 7[3] -> 2[2] [receive] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO Channel 00/0 : 3[3] -> 6[2] [send] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO Channel 01/0 : 3[3] -> 6[2] [send] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Channel 00/0 : 3[3] -> 6[2] [receive] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Channel 01/0 : 3[3] -> 6[2] [receive] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Channel 00/0 : 6[2] -> 5[1] via P2P/CUMEM
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO Channel 00/0 : 5[1] -> 4[0] via P2P/CUMEM
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO Channel 01/0 : 5[1] -> 4[0] via P2P/CUMEM
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Channel 01/0 : 6[2] -> 5[1] via P2P/CUMEM
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Channel 00/0 : 7[3] -> 2[2] [send] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Channel 01/0 : 7[3] -> 2[2] [send] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO Connected all rings
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Connected all rings
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Channel 00/0 : 6[2] -> 7[3] via P2P/CUMEM
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/CUMEM
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO Connected all rings
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Channel 01/0 : 6[2] -> 7[3] via P2P/CUMEM
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO Connected all rings
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO Channel 00/0 : 4[0] -> 5[1] via P2P/CUMEM
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO Connected all rings
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Connected all rings
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO Connected all rings
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Connected all rings
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Channel 00/0 : 7[3] -> 4[0] via P2P/CUMEM
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Channel 01/0 : 7[3] -> 4[0] via P2P/CUMEM
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Channel 00/0 : 6[2] -> 2[2] [receive] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Channel 01/0 : 6[2] -> 2[2] [receive] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Channel 00/0 : 2[2] -> 6[2] [send] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Channel 01/0 : 2[2] -> 6[2] [send] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Channel 00/0 : 2[2] -> 6[2] [receive] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Channel 01/0 : 2[2] -> 6[2] [receive] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Channel 00/0 : 6[2] -> 2[2] [send] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Channel 01/0 : 6[2] -> 2[2] [send] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO Channel 01/0 : 4[0] -> 5[1] via P2P/CUMEM
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO Channel 01/0 : 3[3] -> 0[0] via P2P/CUMEM
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO Connected all trees
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Channel 00/0 : 7[3] -> 6[2] via P2P/CUMEM
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO Connected all trees
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Channel 01/0 : 7[3] -> 6[2] via P2P/CUMEM
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO Connected all trees
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO Connected all trees
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO Connected all trees
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO Connected all trees
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Connected all trees
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO Connected all trees
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+gadi-gpu-v100-0038:1025769:1025859 [0] NCCL INFO comm 0x17ddbc20 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0x948699ca8ca794f8 - Init COMPLETE
+gadi-gpu-v100-0038:1025770:1025860 [1] NCCL INFO comm 0x1881fdd0 rank 5 nranks 8 cudaDev 1 nvmlDev 1 busId 3e000 commId 0x948699ca8ca794f8 - Init COMPLETE
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO comm 0x182121e0 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId b2000 commId 0x948699ca8ca794f8 - Init COMPLETE
+gadi-gpu-v100-0038:1025771:1025862 [2] NCCL INFO comm 0x1909ebf0 rank 6 nranks 8 cudaDev 2 nvmlDev 2 busId b1000 commId 0x948699ca8ca794f8 - Init COMPLETE
+gadi-gpu-v100-0109:2528901:2528991 [0] NCCL INFO comm 0x175761a0 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0x948699ca8ca794f8 - Init COMPLETE
+gadi-gpu-v100-0109:2528902:2528994 [1] NCCL INFO comm 0x17c3de90 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 3e000 commId 0x948699ca8ca794f8 - Init COMPLETE
+gadi-gpu-v100-0109:2528903:2528993 [2] NCCL INFO comm 0x19489a40 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId b1000 commId 0x948699ca8ca794f8 - Init COMPLETE
+gadi-gpu-v100-0109:2528904:2528992 [3] NCCL INFO comm 0x17abbf90 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId b2000 commId 0x948699ca8ca794f8 - Init COMPLETE
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/lightning/fabric/strategies/model_parallel.py:535: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/lightning/fabric/strategies/model_parallel.py:535: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/lightning/fabric/strategies/model_parallel.py:535: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/lightning/fabric/strategies/model_parallel.py:535: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/lightning/fabric/strategies/model_parallel.py:535: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/lightning/fabric/strategies/model_parallel.py:535: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/lightning/fabric/strategies/model_parallel.py:535: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/lightning/fabric/strategies/model_parallel.py:535: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+The longest sequence length in the train data is 512, the model's maximum sequence length is 512 and context length is 4096
+Verifying settings ...
+The longest sequence length in the train data is 512, the model's maximum sequence length is 512 and context length is 4096
+Verifying settings ...
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/home/551/pz7344/scratch/workdir/llama/litgpt.py312/lib/python3.12/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+Epoch 1 | iter 1 step 1 | loss train: 1.429, val: n/a | iter time: 83024.22 ms (step)
+Epoch 1 | iter 1 step 1 | loss train: 1.417, val: n/a | iter time: 83055.35 ms (step)
+Epoch 1 | iter 2 step 2 | loss train: 1.435, val: n/a | iter time: 80134.93 ms (step)
+Epoch 1 | iter 2 step 2 | loss train: 1.627, val: n/a | iter time: 80197.36 ms (step)
+Epoch 1 | iter 3 step 3 | loss train: 1.331, val: n/a | iter time: 80061.29 ms (step)
+Epoch 1 | iter 3 step 3 | loss train: 1.288, val: n/a | iter time: 80074.06 ms (step)
+Epoch 1 | iter 4 step 4 | loss train: 1.011, val: n/a | iter time: 80220.46 ms (step)
+Epoch 1 | iter 4 step 4 | loss train: 0.962, val: n/a | iter time: 80238.34 ms (step)
+Epoch 2 | iter 5 step 5 | loss train: 0.839, val: n/a | iter time: 83272.79 ms (step)
+Epoch 2 | iter 5 step 5 | loss train: 0.883, val: n/a | iter time: 83291.61 ms (step)
+Training time: 421.66s
+Memory used: 17.86 GB
+Training time: 422.16s
+Memory used: 17.86 GB
+
+------------------------------------------------------------------------
+Job 124452549 has exceeded memory allocation on node gadi-gpu-v100-0109.gadi.nci.org.au
+Process "bash", pid 2528815, rss 3604480, vmem 23957504
+Process "pbs_demux", pid 2528826, rss 2568192, vmem 38903808
+Process "mpirun", pid 2528871, rss 8335360, vmem 307929088
+Process "pt_main_thread", pid 2528901, rss 12930043904, vmem 64778096640
+Process "pt_main_thread", pid 2528902, rss 1620537344, vmem 51552059392
+Process "pt_main_thread", pid 2528903, rss 1652441088, vmem 53710479360
+Process "pt_main_thread", pid 2528904, rss 1628700672, vmem 58388602880
+------------------------------------------------------------------------
+For more information visit https://opus.nci.org.au/x/SwGRAQ
+------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node gadi-gpu-v100-0109 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+
+======================================================================================
+                  Resource Usage on 2024-09-08 21:10:08:
+   Job Id:             124452549.gadi-pbs
+   Project:            xs75
+   Exit Status:        137 (Linux Signal 9 SIGKILL Kill, unblockable)
+   Service Units:      39.52
+   NCPUs Requested:    96                     NCPUs Used: 96              
+                                           CPU Time Used: 01:01:54        
+   Memory Requested:   32.0GB                Memory Used: 21.64GB         
+   NGPUs Requested:    8                 GPU Utilisation: 766%            
+                                         GPU Memory Used: 216.07GB        
+   Walltime requested: 00:10:00            Walltime Used: 00:08:14        
+   JobFS requested:    200.0MB                JobFS used: 0B              
+======================================================================================

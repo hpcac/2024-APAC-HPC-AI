@@ -1,0 +1,23 @@
+time mpirun -host gadi-cpu-clx-2296.gadi.nci.org.au,gadi-cpu-clx-2297.gadi.nci.org.au -wdir /home/551/pz7344/scratch/workdir/hoomd -output-filename /home/551/pz7344/run/output/hoomd.nodes2.WS40000.BS80000.N200000.126652165.gadi-pbs -map-by ppr:48:node -oversubscribe -use-hwthread-cpus -x PYTHONPATH=/home/551/pz7344/scratch/workdir/hoomd/build/hoomd-openmpi4.1.5:/home/551/pz7344/scratch/workdir/hoomd/hoomd-benchmarks /home/551/pz7344/scratch/workdir/hoomd/hoomd.py312/bin/python -m hoomd_benchmarks.md_pair_wca --device CPU -v -N 200000 --repeat 1 --warmup_steps 40000 --benchmark_steps 80000
+Using existing initial_configuration_cache/hard_sphere_200000_1.0_3.gsd
+notice(2): Using domain decomposition: n_x = 4 n_y = 4 n_z = 6.
+Running MDPairWCA benchmark
+.. warming up for 40000 steps
+.. running for 80000 steps 1 time(s)
+.. 988.4693811106713 time steps per second
+988.4693811106713
+5674.48user 277.12system 2:08.16elapsed 4643%CPU (0avgtext+0avgdata 448924maxresident)k
+473920inputs+16792outputs (31362major+13173947minor)pagefaults 0swaps
+
+======================================================================================
+                  Resource Usage on 2024-10-12 22:46:40:
+   Job Id:             126652165.gadi-pbs
+   Project:            xs75
+   Exit Status:        0
+   Service Units:      6.93
+   NCPUs Requested:    96                     NCPUs Used: 96              
+                                           CPU Time Used: 03:18:40        
+   Memory Requested:   96.0GB                Memory Used: 31.9GB          
+   Walltime requested: 00:05:00            Walltime Used: 00:02:10        
+   JobFS requested:    200.0MB                JobFS used: 0B              
+======================================================================================

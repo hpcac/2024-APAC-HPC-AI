@@ -1,0 +1,23 @@
+time mpirun -host gadi-cpu-clx-0577.gadi.nci.org.au,gadi-cpu-clx-0578.gadi.nci.org.au,gadi-cpu-clx-0579.gadi.nci.org.au,gadi-cpu-clx-0580.gadi.nci.org.au,gadi-cpu-clx-0581.gadi.nci.org.au,gadi-cpu-clx-0582.gadi.nci.org.au,gadi-cpu-clx-0583.gadi.nci.org.au,gadi-cpu-clx-0584.gadi.nci.org.au,gadi-cpu-clx-0585.gadi.nci.org.au,gadi-cpu-clx-0586.gadi.nci.org.au,gadi-cpu-clx-0589.gadi.nci.org.au,gadi-cpu-clx-0590.gadi.nci.org.au,gadi-cpu-clx-0591.gadi.nci.org.au,gadi-cpu-clx-0592.gadi.nci.org.au,gadi-cpu-clx-0593.gadi.nci.org.au,gadi-cpu-clx-0594.gadi.nci.org.au,gadi-cpu-clx-0597.gadi.nci.org.au,gadi-cpu-clx-0598.gadi.nci.org.au,gadi-cpu-clx-0599.gadi.nci.org.au,gadi-cpu-clx-0600.gadi.nci.org.au,gadi-cpu-clx-0601.gadi.nci.org.au,gadi-cpu-clx-0602.gadi.nci.org.au,gadi-cpu-clx-0603.gadi.nci.org.au,gadi-cpu-clx-0604.gadi.nci.org.au,gadi-cpu-clx-0605.gadi.nci.org.au,gadi-cpu-clx-0606.gadi.nci.org.au,gadi-cpu-clx-0607.gadi.nci.org.au,gadi-cpu-clx-0608.gadi.nci.org.au,gadi-cpu-clx-0609.gadi.nci.org.au,gadi-cpu-clx-0610.gadi.nci.org.au,gadi-cpu-clx-0611.gadi.nci.org.au,gadi-cpu-clx-0612.gadi.nci.org.au -wdir /home/551/pz7344/scratch/workdir/hoomd -output-filename /home/551/pz7344/run/output/hoomd.nodes32.WS100000.BS160000.N200000.126652137.gadi-pbs -map-by ppr:48:node -oversubscribe -use-hwthread-cpus -x PYTHONPATH=/home/551/pz7344/scratch/workdir/hoomd/build/hoomd-openmpi4.1.5:/home/551/pz7344/scratch/workdir/hoomd/hoomd-benchmarks /home/551/pz7344/scratch/workdir/hoomd/hoomd.py312/bin/python -m hoomd_benchmarks.md_pair_wca --device CPU -v -N 200000 --repeat 1 --warmup_steps 100000 --benchmark_steps 160000
+Using existing initial_configuration_cache/hard_sphere_200000_1.0_3.gsd
+notice(2): Using domain decomposition: n_x = 8 n_y = 12 n_z = 16.
+Running MDPairWCA benchmark
+.. warming up for 100000 steps
+.. running for 160000 steps 1 time(s)
+.. 5847.372539795664 time steps per second
+5847.372539795664
+1860.48user 567.50system 0:57.11elapsed 4250%CPU (0avgtext+0avgdata 464504maxresident)k
+515864inputs+16816outputs (32663major+8426561minor)pagefaults 0swaps
+
+======================================================================================
+                  Resource Usage on 2024-10-12 22:39:04:
+   Job Id:             126652137.gadi-pbs
+   Project:            xs75
+   Exit Status:        0
+   Service Units:      50.35
+   NCPUs Requested:    1536                   NCPUs Used: 1536            
+                                           CPU Time Used: 20:36:50        
+   Memory Requested:   1.5TB                 Memory Used: 503.42GB        
+   Walltime requested: 00:05:00            Walltime Used: 00:00:59        
+   JobFS requested:    3.12GB                 JobFS used: 0B              
+======================================================================================

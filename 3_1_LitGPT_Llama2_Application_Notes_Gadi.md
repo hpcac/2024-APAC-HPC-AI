@@ -97,6 +97,7 @@ Create a script file `${HOME}/run/llama.sh` with the following contents:
 #PBS -P xs75
 #PBS -q gpuvolta
 
+date
 module purge
 module load pbs openmpi/4.1.5
 
@@ -128,6 +129,7 @@ ${HOME}/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf \
 echo ${cmd}
 
 exec ${cmd}
+date
 ```
 
 ## Submit the job script to PBS
@@ -156,6 +158,7 @@ The performance results of LitGPT Llama2 training are measured in “Training ti
 
 ```
 grep "Training time: 418.99s" ${HOME}/run/llama.* -r
-#llama.nodes2.GBS128.MBS32.o124452549:Training time: 422.16s
+$ grep "Training time" ${HOME}/run/output/llama.*/1/rank.*/*
+/home/551/pz7344/run/output/llama.nodes2.GBS128.MBS32.124452549.gadi-pbs/1/rank.0/stdout:Training time: 421.66s
+/home/551/pz7344/run/output/llama.nodes2.GBS128.MBS32.124452549.gadi-pbs/1/rank.4/stdout:Training time: 422.16s
 ```
-

@@ -1,0 +1,75 @@
+uvloop is not installed. Falling back to the default asyncio event loop.
+{'access_token': None,
+ 'checkpoint_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf'),
+ 'data': JSON(json_path=PosixPath('/home/551/pz7344/scratch/workdir/llama/dataset/alpaca1024'),
+              mask_prompt=False,
+              val_split_fraction=None,
+              prompt_style=<litgpt.prompts.Alpaca object at 0x1514a0052d80>,
+              ignore_index=-100,
+              seed=42,
+              num_workers=4),
+ 'devices': 4,
+ 'eval': EvalArgs(interval=25000,
+                  max_new_tokens=100,
+                  max_iters=100,
+                  initial_validation=False,
+                  final_validation=False),
+ 'logger_name': 'csv',
+ 'num_nodes': 2,
+ 'optimizer': 'AdamW',
+ 'out_dir': PosixPath('/home/551/pz7344/scratch/workdir/llama/out/finetune/full'),
+ 'precision': 'bf16-true',
+ 'resume': False,
+ 'seed': 1337,
+ 'train': TrainArgs(save_interval=20000,
+                    log_interval=1,
+                    global_batch_size=128,
+                    micro_batch_size=32,
+                    lr_warmup_steps=100,
+                    lr_warmup_fraction=None,
+                    epochs=1,
+                    max_tokens=None,
+                    max_steps=20,
+                    max_seq_length=512,
+                    tie_embeddings=None,
+                    max_norm=None,
+                    min_lr=6e-05)}
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO cudaDriverVersion 12040
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO Bootstrap : Using ib0:10.6.9.22<0>
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.6.9.22<0>
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO comm 0xc0a6190 rank 7 nranks 8 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xddb2357dc3c44e46 - Init START
+
+gadi-gpu-v100-0038:1025772:1025772 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 7 and rank 4 both on CUDA device 3d000
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO comm 0xf8805a0 rank 3 nranks 4 cudaDev 0 nvmlDev 0 busId 3d000 commId 0xcfefd8134fed0620 - Init START
+
+gadi-gpu-v100-0038:1025772:1025772 [0] init.cc:871 NCCL WARN Duplicate GPU detected : rank 3 and rank 0 both on CUDA device 3d000
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO init.cc:1501 -> 5
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO init.cc:1746 -> 5
+gadi-gpu-v100-0038:1025772:1025772 [0] NCCL INFO init.cc:1784 -> 5
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Using non-device net plugin version 0
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Using network IB
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO comm 0x182121e0 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId b2000 commId 0x948699ca8ca794f8 - Init START
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to SYS
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO NVLS multicast support is not available on dev 3
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO comm 0x182121e0 rank 7 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Trees [0] 4/-1/-1->7->6 [1] 4/-1/-1->7->6
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO P2P Chunksize set to 131072
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Channel 00/0 : 7[3] -> 2[2] [send] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Channel 01/0 : 7[3] -> 2[2] [send] via NET/IB/0/GDRDMA
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Connected all rings
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Channel 00/0 : 7[3] -> 4[0] via P2P/CUMEM
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Channel 01/0 : 7[3] -> 4[0] via P2P/CUMEM
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Channel 00/0 : 7[3] -> 6[2] via P2P/CUMEM
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Channel 01/0 : 7[3] -> 6[2] via P2P/CUMEM
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO Connected all trees
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+gadi-gpu-v100-0038:1025772:1025861 [3] NCCL INFO comm 0x182121e0 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId b2000 commId 0x948699ca8ca794f8 - Init COMPLETE

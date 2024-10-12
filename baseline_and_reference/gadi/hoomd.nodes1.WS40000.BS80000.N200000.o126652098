@@ -1,0 +1,22 @@
+time mpirun -host gadi-cpu-clx-2716.gadi.nci.org.au -wdir /home/551/pz7344/scratch/workdir/hoomd -output-filename /home/551/pz7344/run/output/hoomd.nodes1.WS40000.BS80000.N200000.126652098.gadi-pbs -map-by ppr:48:node -oversubscribe -use-hwthread-cpus -x PYTHONPATH=/home/551/pz7344/scratch/workdir/hoomd/build/hoomd-openmpi4.1.5:/home/551/pz7344/scratch/workdir/hoomd/hoomd-benchmarks /home/551/pz7344/scratch/workdir/hoomd/hoomd.py312/bin/python -m hoomd_benchmarks.md_pair_wca --device CPU -v -N 200000 --repeat 1 --warmup_steps 40000 --benchmark_steps 80000
+Using existing initial_configuration_cache/hard_sphere_200000_1.0_3.gsd
+notice(2): Using domain decomposition: n_x = 3 n_y = 4 n_z = 4.
+Running MDPairWCA benchmark
+.. warming up for 40000 steps
+.. running for 80000 steps 1 time(s)
+.. 414.4660591257386 time steps per second
+414.4660591257386
+=>> PBS: job killed: walltime 308 exceeded limit 300
+
+======================================================================================
+                  Resource Usage on 2024-10-12 22:41:06:
+   Job Id:             126652098.gadi-pbs
+   Project:            xs75
+   Exit Status:        -29 (Job failed due to exceeding walltime)
+   Service Units:      8.51
+   NCPUs Requested:    48                     NCPUs Used: 48              
+                                           CPU Time Used: 03:54:40        
+   Memory Requested:   48.0GB                Memory Used: 21.72GB         
+   Walltime requested: 00:05:00            Walltime Used: 00:05:19        
+   JobFS requested:    100.0MB                JobFS used: 0B              
+======================================================================================

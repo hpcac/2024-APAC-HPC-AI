@@ -1,0 +1,23 @@
+time mpirun -host gadi-cpu-clx-1261.gadi.nci.org.au,gadi-cpu-clx-1262.gadi.nci.org.au,gadi-cpu-clx-1263.gadi.nci.org.au,gadi-cpu-clx-1264.gadi.nci.org.au,gadi-cpu-clx-1265.gadi.nci.org.au,gadi-cpu-clx-1266.gadi.nci.org.au,gadi-cpu-clx-1267.gadi.nci.org.au,gadi-cpu-clx-1268.gadi.nci.org.au,gadi-cpu-clx-1269.gadi.nci.org.au,gadi-cpu-clx-1270.gadi.nci.org.au,gadi-cpu-clx-1271.gadi.nci.org.au,gadi-cpu-clx-1272.gadi.nci.org.au,gadi-cpu-clx-1273.gadi.nci.org.au,gadi-cpu-clx-1274.gadi.nci.org.au,gadi-cpu-clx-1275.gadi.nci.org.au,gadi-cpu-clx-1278.gadi.nci.org.au -wdir /home/551/pz7344/scratch/workdir/hoomd -output-filename /home/551/pz7344/run/output/hoomd.nodes16.WS40000.BS80000.N200000.126652172.gadi-pbs -map-by ppr:48:node -oversubscribe -use-hwthread-cpus -x PYTHONPATH=/home/551/pz7344/scratch/workdir/hoomd/build/hoomd-openmpi4.1.5:/home/551/pz7344/scratch/workdir/hoomd/hoomd-benchmarks /home/551/pz7344/scratch/workdir/hoomd/hoomd.py312/bin/python -m hoomd_benchmarks.md_pair_wca --device CPU -v -N 200000 --repeat 1 --warmup_steps 40000 --benchmark_steps 80000
+Using existing initial_configuration_cache/hard_sphere_200000_1.0_3.gsd
+notice(2): Using domain decomposition: n_x = 8 n_y = 8 n_z = 12.
+Running MDPairWCA benchmark
+.. warming up for 40000 steps
+.. running for 80000 steps 1 time(s)
+.. 4502.474588174126 time steps per second
+4502.474588174126
+1242.03user 269.74system 0:37.80elapsed 3998%CPU (0avgtext+0avgdata 465344maxresident)k
+0inputs+17608outputs (325major+6478393minor)pagefaults 0swaps
+
+======================================================================================
+                  Resource Usage on 2024-10-12 22:45:44:
+   Job Id:             126652172.gadi-pbs
+   Project:            xs75
+   Exit Status:        0
+   Service Units:      17.07
+   NCPUs Requested:    768                    NCPUs Used: 768             
+                                           CPU Time Used: 06:45:26        
+   Memory Requested:   768.0GB               Memory Used: 249.11GB        
+   Walltime requested: 00:05:00            Walltime Used: 00:00:40        
+   JobFS requested:    1.56GB                 JobFS used: 0B              
+======================================================================================

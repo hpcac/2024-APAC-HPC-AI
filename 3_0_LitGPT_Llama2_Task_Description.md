@@ -13,9 +13,9 @@ Participants are required to optimize the following workload for improved perfor
 - **Number of Epochs**: 1
 - **Dataset**
 
-| Supercomputer | NCI Gadi iterations     | NSCC SG Aspire-2A iterations |
-| ------------- | ----------------------- | ---------------------------- |
-| **Dataset**   | `Alpaca1024/train.json` | `Alpaca1024/train.json`      |
+| Supercomputer | NCI Gadi iterations     | Gadi Baseline     | NSCC SG Aspire-2A iterations | Aspire-2A Baseline |
+| ------------- | ----------------------- | ----------------- | ---------------------------- | ------------------ |
+| **Dataset**   | `Alpaca1024/train.json` | 421.66s / 422.16s | `Alpaca1024/train.json`      | 41.42s / 41.51s    |
 
 ## 2. Submission and Presentation
 

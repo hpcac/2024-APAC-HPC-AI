@@ -102,6 +102,7 @@ module purge
 module load openmpi/4.1.2-hpe
 module load libfabric/1.11.0.4.125
 
+date
 env
 cat $PBS_NODEFILE
 #hosts=$(sort -u ${PBS_NODEFILE} | paste -sd ',')
@@ -133,6 +134,7 @@ ${HOME}/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf \
 echo ${cmd}
 
 exec ${cmd}
+date
 
 # The following 3 lines are reference for your minimal distributed training trials
 #EleutherAI/pythia-70m \
@@ -143,6 +145,7 @@ exec ${cmd}
 ## Submit the job script to PBS
 
 ```bash
+# submit.llama.sh in reference directroy
 cd ${HOME}/run
 
 # CAUTION: This dangerous qsub command may result in 2 hours of billable time with no useful output for inexperienced users
@@ -167,8 +170,9 @@ tail -f ${HOME}/run/output/llama.nodes2.GBS64.MBS8.{PBS_JOBNAME.PBS_JOBID}.pbs-1
 The performance results of LitGPT Llama2 training are measured in “Training time”. The lower the value, the better.
 
 ```
-$ grep "Training time" /${HOME}/run/output/llama.nodes2.GBS128.MBS32.8335473.pbs101/1/rank.*/*
-output/llama.nodes2.GBS128.MBS32.8335473.pbs101/1/rank.0/stdout:Training time: 41.42s
-output/llama.nodes2.GBS128.MBS32.8335473.pbs101/1/rank.4/stdout:Training time: 41.51s
-
+$ grep "Training time" ${HOME}/run/output/llama.*/1/rank.*/*
+/home/users/industry/ai-hpc/apacsc22/run/output/llama.nodes2.GBS128.MBS32.8335473.pbs101/1/rank.0/stdout:Training time: 41.42s
+/home/users/industry/ai-hpc/apacsc22/run/output/llama.nodes2.GBS128.MBS32.8335473.pbs101/1/rank.4/stdout:Training time: 41.51s
+/home/users/industry/ai-hpc/apacsc22/run/output/llama.nodes2.GBS128.MBS32.8345846.pbs101/1/rank.0/stdout:Training time: 38.10s
+/home/users/industry/ai-hpc/apacsc22/run/output/llama.nodes2.GBS128.MBS32.8345846.pbs101/1/rank.4/stdout:Training time: 38.04s
 ```

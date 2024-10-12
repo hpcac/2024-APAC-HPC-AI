@@ -160,6 +160,7 @@ Create a shell script file, `${HOME}/run/hoomd.sh`, with following contents
 ##-bind-to hwthread -use-hwthread-cpus \
 ##-report-bindings \
 
+date
 module purge
 module load openmpi/4.1.2-hpe
 module load libfabric/1.11.0.4.125
@@ -181,6 +182,7 @@ ${HOME}/scratch/workdir/hoomd/hoomd.py312/bin/python \
 echo ${cmd}
 
 exec ${cmd}
+date
 ```
 
 ## Submit the job script to PBS
@@ -191,15 +193,17 @@ The following command
 2. Submit the PBS job script to normal queue(CPU queue)
 
 ```bash
+# submit.hoomd.sh in reference directroy
 cd ${HOME}/run
 
 nodes=8 walltime=00:00:200 \
-warmup_steps=10000 benchmark_steps=20000 repeat=1 N=2000000 \
+warmup_steps=40000 benchmark_steps=80000 repeat=1 N=200000 \
 bash -c \
 'qsub -V \
 -l walltime=${walltime},select=${nodes}:ncpus=$((128*1)):mem=$((128*2))gb \
--N hoomd.nodes${nodes}.WS${warmup_steps}.BS${benchmark_steps} \
+-N hoomd.nodes${nodes}.WS${warmup_steps}.BS${benchmark_steps}.N${N} \
 hoomd.sh'
+
 ```
 
 
@@ -209,7 +213,13 @@ hoomd.sh'
 The performance results of HOOMD-blue are measured in “time steps per second”. The higher the value, the better.
 
 ```
-grep "time steps per second" ${HOME}/run/hoomd.* -r
-# hoomd.nodes4.WS40000.BS80000.o124445202:.. 1907.580855079795 time steps per second
+$ grep "time steps per second" ${HOME}/run/hoomd*.N200000.* |sort  --version-sort
+/home/users/industry/ai-hpc/apacsc22/run/hoomd.nodes1.WS40000.BS80000.N200000.o8345790:.. 1096.3271246089932 time steps per second
+/home/users/industry/ai-hpc/apacsc22/run/hoomd.nodes2.WS40000.BS80000.N200000.o8345789:.. 1813.647534468598 time steps per second
+/home/users/industry/ai-hpc/apacsc22/run/hoomd.nodes4.WS40000.BS80000.N200000.o8345788:.. 2741.2158594414154 time steps per second
+/home/users/industry/ai-hpc/apacsc22/run/hoomd.nodes8.WS40000.BS80000.N200000.o8345799:.. 3105.8205873044612 time steps per second
+/home/users/industry/ai-hpc/apacsc22/run/hoomd.nodes16.WS40000.BS80000.N200000.o8345796:.. 3173.907433941861 time steps per second
+/home/users/industry/ai-hpc/apacsc22/run/hoomd.nodes16.WS100000.BS160000.N200000.o8345825:.. 3394.945583796434 time steps per second
+/home/users/industry/ai-hpc/apacsc22/run/hoomd.nodes32.WS40000.BS80000.N200000.o8345804:.. 3877.4799695443335 time steps per second
+/home/users/industry/ai-hpc/apacsc22/run/hoomd.nodes32.WS100000.BS160000.N200000.o8345824:.. 3897.469465640859 time steps per second
 ```
-
