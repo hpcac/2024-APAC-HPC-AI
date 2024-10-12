@@ -19,16 +19,16 @@ Participants are required to optimize the following workload for improved perfor
 
 ## 2. Submission and Presentation
 
-- Submit all your `build scripts`, `setup scripts`, `run scripts`, `LitGPT configuration file`, and `output text` files(e.g., *.stdout, *.o{jobid}, etc.).
+- Prepare presentation slides for your team’s interview based on your application tuning work.
+- Include a comparison with the provided baseline performance in your presentation slides.
+- Submit the `build scripts`, `setup scripts`, `run scripts`, `LitGPT configuration file`, and `output text` files that support your presentation(e.g., *.stdout, *.o{jobid}, etc.).
 - Do **not** submit the large model files.
-- Prepare slides for your team’s interview based on your application tuning work.
-- Submit all your `build scripts`, `run scripts`, and `output text` files 
 
 ## 3. Rules
 
 - Participants need to run the task on `2 servers, each equipped with 4 GPUs`.
 - Participants are not allowed to make any changes to the model itself.
-- Grading will  based on the `optimization method` and the `performance improvement` achieved.
+- Grading will be based on the `optimization method` and the `performance improvement` achieved.
 
 ## 4. General Rules
 

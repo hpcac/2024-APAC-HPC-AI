@@ -212,7 +212,7 @@ hoomd.sh'
 
 The performance results of HOOMD-blue are measured in “time steps per second”. The higher the value, the better.
 
-```
+```bash
 $ grep "time steps per second" ${HOME}/run/hoomd*.N200000.* |sort  --version-sort
 /home/users/industry/ai-hpc/apacsc22/run/hoomd.nodes1.WS40000.BS80000.N200000.o8345790:.. 1096.3271246089932 time steps per second
 /home/users/industry/ai-hpc/apacsc22/run/hoomd.nodes2.WS40000.BS80000.N200000.o8345789:.. 1813.647534468598 time steps per second

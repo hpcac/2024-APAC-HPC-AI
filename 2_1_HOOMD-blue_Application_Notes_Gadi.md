@@ -93,7 +93,7 @@ Follow these steps:
 1. Download and unpack HPC-X
 2. Load HPC-X OpenMPI module file instead of prebuilt openmpi/4.1.5 before launching the MPI task
 
-```
+```bash
 time wget -P ${HOME} https://content.mellanox.com/hpc/hpc-x/v2.20/hpcx-v2.20-gcc-mlnx_ofed-redhat8-cuda12-x86_64.tbz
 # real	0m34.912s
 time tar -C ${HOME} -xf ${HOME}/hpcx-v2.20-gcc-mlnx_ofed-redhat8-cuda12-x86_64.tbz
@@ -165,7 +165,7 @@ hoomd.sh'
 
 The performance results of HOOMD-blue are measured in “time steps per second”. The higher the value, the better.
 
-```
+```bash
 $ grep "time steps per second" ${HOME}/run/hoomd*.N200000.* |sort  --version-sort
 /home/551/pz7344/run/hoomd.nodes1.WS40000.BS80000.N200000.o126652098:.. 414.4660591257386 time steps per second
 /home/551/pz7344/run/hoomd.nodes2.WS40000.BS80000.N200000.o126652165:.. 988.4693811106713 time steps per second

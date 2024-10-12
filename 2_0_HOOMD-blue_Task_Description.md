@@ -24,13 +24,14 @@ Participants are required to optimize the following workload for improved perfor
 
 ## 2. Submission and Presentation
 
-- Submit all your `build scripts`, `run scripts`, and `output text` files (e.g., *.stdout, *.o{jobid}, etc.)
-- Prepare slides for your team’s interview based on your application tuning work.
+- Prepare presentation slides for your team’s interview based on your application tuning work.
+- Include a comparison with the provided baseline performance in your presentation slides.
+- Submit your `build scripts`, `run scripts`, and `output text` files that support your presentation(e.g., 0.stdout, *.o{jobid}, etc.)
 
 ## 3. Rules
 
 - The results will be executed on `up to 32 normal CPU servers`.
-- Grading will  based on the `optimization method` and the `performance improvement` achieved.
+- Grading will be based on the `optimization method` and the `performance improvement` achieved.
 - Participants may use any version of tagged HOOMD-blue code available at [Releases · hoomd-blue](https://github.com/glotzerlab/hoomd-blue/releases) or the HOOMD-blue GitHub code from the default branch.
 
 ## 4. General Rules
