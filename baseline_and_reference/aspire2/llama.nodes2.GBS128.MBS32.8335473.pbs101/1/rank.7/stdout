@@ -1,0 +1,61 @@
+{'access_token': None,
+ 'checkpoint_dir': PosixPath('/home/users/industry/ai-hpc/apacsc22/scratch/workdir/llama/model/litgpt/meta-llama/Llama-2-7b-hf'),
+ 'data': JSON(json_path=PosixPath('/home/users/industry/ai-hpc/apacsc22/scratch/workdir/llama/dataset/alpaca1024'),
+              mask_prompt=False,
+              val_split_fraction=None,
+              prompt_style=<litgpt.prompts.Alpaca object at 0x1492c0681c70>,
+              ignore_index=-100,
+              seed=42,
+              num_workers=4),
+ 'devices': 4,
+ 'eval': EvalArgs(interval=25000,
+                  max_new_tokens=100,
+                  max_iters=100,
+                  initial_validation=False,
+                  final_validation=False),
+ 'logger_name': 'csv',
+ 'num_nodes': 2,
+ 'optimizer': 'AdamW',
+ 'out_dir': PosixPath('/home/users/industry/ai-hpc/apacsc22/scratch/workdir/llama/out/finetune/full'),
+ 'precision': 'bf16-true',
+ 'resume': False,
+ 'seed': 1337,
+ 'train': TrainArgs(save_interval=20000,
+                    log_interval=1,
+                    global_batch_size=128,
+                    micro_batch_size=32,
+                    lr_warmup_steps=100,
+                    lr_warmup_fraction=None,
+                    epochs=1,
+                    max_tokens=None,
+                    max_steps=20,
+                    max_seq_length=512,
+                    tie_embeddings=None,
+                    max_norm=None,
+                    min_lr=6e-05)}
+x1000c2s0b0n1:309943:309943 [3] NCCL INFO cudaDriverVersion 12020
+x1000c2s0b0n1:309943:309943 [3] NCCL INFO Bootstrap : Using hsn0:10.150.0.156<0>
+x1000c2s0b0n1:309943:309943 [3] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO NET/Socket : Using [0]hsn0:10.150.0.156<0> [1]hsn1:10.150.0.160<0> [2]bond0:10.168.0.20<0>
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO Using non-device net plugin version 0
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO Using network Socket
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO comm 0x1526c2c0 rank 7 nranks 8 cudaDev 3 nvmlDev 2 busId 81000 commId 0x59d1f031ecde0ebc - Init START
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO Setting affinity for GPU 2 to ffff0000,00000000,ffff0000
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO NVLS multicast support is not available on dev 3
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO comm 0x1526c2c0 rank 7 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO Trees [0] -1/-1/-1->7->6 [1] -1/-1/-1->7->6 [2] -1/-1/-1->7->6 [3] -1/-1/-1->7->6
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO P2P Chunksize set to 131072
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO Channel 00/0 : 7[2] -> 2[0] [send] via NET/Socket/1
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO Channel 02/0 : 7[2] -> 2[0] [send] via NET/Socket/1
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO Channel 01/0 : 7[2] -> 6[0] via P2P/CUMEM/read
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO Channel 03/0 : 7[2] -> 6[0] via P2P/CUMEM/read
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO Connected all rings
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO Channel 00/0 : 7[2] -> 6[0] via P2P/CUMEM/read
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO Channel 02/0 : 7[2] -> 6[0] via P2P/CUMEM/read
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO Connected all trees
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x1000c2s0b0n1:309943:311301 [3] NCCL INFO comm 0x1526c2c0 rank 7 nranks 8 cudaDev 3 nvmlDev 2 busId 81000 commId 0x59d1f031ecde0ebc - Init COMPLETE
+x1000c2s0b0n1:309943:311304 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+x1000c2s0b0n1:309943:316142 [3] NCCL INFO comm 0x1526c2c0 rank 7 nranks 8 cudaDev 3 busId 81000 - Abort COMPLETE
